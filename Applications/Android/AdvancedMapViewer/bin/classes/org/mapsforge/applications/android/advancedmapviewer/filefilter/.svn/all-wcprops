@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/1724/trunk/Applications/Android/AdvancedMapViewer/src/org/mapsforge/applications/android/advancedmapviewer/filefilter
+END
+ValidRenderTheme.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/1724/trunk/Applications/Android/AdvancedMapViewer/src/org/mapsforge/applications/android/advancedmapviewer/filefilter/ValidRenderTheme.java
+END
+ValidFileFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/!svn/ver/1724/trunk/Applications/Android/AdvancedMapViewer/src/org/mapsforge/applications/android/advancedmapviewer/filefilter/ValidFileFilter.java
+END
+FilterByFileExtension.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/!svn/ver/1724/trunk/Applications/Android/AdvancedMapViewer/src/org/mapsforge/applications/android/advancedmapviewer/filefilter/FilterByFileExtension.java
+END
+ValidMapFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/1724/trunk/Applications/Android/AdvancedMapViewer/src/org/mapsforge/applications/android/advancedmapviewer/filefilter/ValidMapFile.java
+END

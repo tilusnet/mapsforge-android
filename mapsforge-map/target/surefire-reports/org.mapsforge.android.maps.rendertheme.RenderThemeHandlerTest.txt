@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.mapsforge.android.maps.rendertheme.RenderThemeHandlerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.166 sec
