@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/hierarchycomputation/util/arrays
+END
+UnsignedByteArray.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/hierarchycomputation/util/arrays/UnsignedByteArray.java
+END
+BitArrayGrowable.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/hierarchycomputation/util/arrays/BitArrayGrowable.java
+END
+UnsignedByteArrayGrowable.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/hierarchycomputation/util/arrays/UnsignedByteArrayGrowable.java
+END
+UnsignedFourBitArray.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/hierarchycomputation/util/arrays/UnsignedFourBitArray.java
+END
+UnsignedFourBitArrayGrowable.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/hierarchycomputation/util/arrays/UnsignedFourBitArrayGrowable.java
+END
+IntArrayGrowable.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/hierarchycomputation/util/arrays/IntArrayGrowable.java
+END
+BitArray.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/hierarchycomputation/util/arrays/BitArray.java
+END
+BitArraySynchronized.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/hierarchycomputation/util/arrays/BitArraySynchronized.java
+END

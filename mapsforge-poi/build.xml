@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Use this Ant script for convenience with creating a distribution of mapsforge.
+The script in not intended for building the project. Use Eclipse for this
+purpose.
+-->
+<project name="mapsforge">
+	<property name="mapsforge.version" value="0.2.4" />
+
+	<property name="mapsforge.bin" value="bin" />
+	<property name="mapsforge.lib" value="lib" />
+	<property name="mapsforge.src" value="src" />
+	<property name="mapsforge.dist" value="dist" />
+	<property name="mapsforge.doc" value="doc" />
+
+	<property name="mapsforge.advancemapviewer.lib.dir"
+	          value="${basedir}/../AdvancedMapViewer/lib" />
+	<property name="mapsforge.samples.lib.dir" value="${basedir}/../Samples/lib" />
+	<property name="mapsforge.routingservlet.lib.dir"
+	          value="${basedir}/../HHRoutingWebservice/WebContent/WEB-INF/lib" />
+
+	<!-- Path to the properties file that includes the keystore parameters -->
+	<property file="../mapsforge-keystore.properties" />
+
+	<!-- List of files to be included in every distribution (JAR file) -->
+	<fileset dir="." id="info" includes="COPYING, COPYING.LESSER, NEWS" />
+
+	<!-- List of all JAR files in the library folder -->
+	<path id="classpath">
+		<fileset dir="${mapsforge.lib}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+
+	<!-- Check if the keystore exists -->
+	<target name="check-for-keystore">
+		<available file="${mapsforge.keystore.location}"
+		           type="file"
+		           property="keystore.present" />
+	</target>
+
+
+	<!-- Delete temporary folders -->
+	<target name="clean">
+		<delete dir="${mapsforge.doc}" />
+		<delete dir="${mapsforge.dist}" />
+		<antcall target="eclipse-refresh">
+			<param name="resource" value="mapsforge/${mapsforge.dist}" />
+		</antcall>
+		<antcall target="eclipse-refresh">
+			<param name="resource" value="mapsforge/${mapsforge.doc}" />
+		</antcall>
+	</target>
+
+
+	<!-- Refresh the given resource if Ant runs in the same JRE as the workspace -->
+	<target name="eclipse-refresh" if="eclipse.running">
+		<eclipse.refreshLocal resource="${resource}" depth="infinite" />
+	</target>
+
+
+	<!-- ################## mapsforge-poidb-writer-jar ################## -->
+	<target name="mapsforge-poidb-writer-jar-create">
+		<mkdir dir="${mapsforge.dist}" />
+		<delete file="${mapsforge.dist}/mapsforge-poidb-writer-${mapsforge.version}-experimental.jar" />
+		<jar destfile="${mapsforge.dist}/mapsforge-poidb-writer-${mapsforge.version}-experimental.jar" duplicate="preserve">
+			<fileset dir="src/" excludes="org/mapsforge/preprocessing/poi/osmosis/plugin.xml" includes="org/mapsforge/preprocessing/poi/osmosis/" />
+			<fileset dir="src/" excludes="org/mapsforge/storage/poi/AndroidPoiCategoryManager.java" includes="org/mapsforge/storage/poi/" />
+
+			<fileset dir="bin/" includes="org/mapsforge/preprocessing/poi/osmosis/" />
+			<fileset dir="bin/" excludes="org/mapsforge/storage/poi/AndroidPoiCategoryManager.class" includes="org/mapsforge/storage/poi/" />
+			<fileset dir="src/org/mapsforge/preprocessing/poi/osmosis/" includes="plugin.xml"/>
+			<fileset dir="src/" includes="osmosis-plugin.conf" />
+		</jar>
+
+	</target>
+
+	<target name="mapsforge-poidb-writer-jar-copy" depends="mapsforge-poidb-writer-jar-create">
+		<copy file="${mapsforge.dist}/mapsforge-poidb-writer-${mapsforge.version}-experimental.jar" todir="${user.home}/.openstreetmap/osmosis/plugins/" />
+	</target>
+	
+</project>

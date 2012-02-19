@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/core
+END
+Router.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/core/Router.java
+END
+Way.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/core/Way.java
+END
+GeoCoordinate.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/core/GeoCoordinate.java
+END
+Edge.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/core/Edge.java
+END
+Node.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/core/Node.java
+END
+SimpleVertex.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/core/SimpleVertex.java
+END
+MercatorProjection.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/core/MercatorProjection.java
+END
+SimpleGraph.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/core/SimpleGraph.java
+END
+WGS84.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/core/WGS84.java
+END
+Vertex.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/core/Vertex.java
+END
+Rect.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/core/Rect.java
+END
+Tile.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/core/Tile.java
+END
+SimpleEdge.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/core/SimpleEdge.java
+END

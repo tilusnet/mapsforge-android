@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/1626/trunk/mapsforge-poi
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1626/trunk/mapsforge-poi/.classpath
+END
+.pmd_ruleset.xml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1626/trunk/mapsforge-poi/.pmd_ruleset.xml
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1626/trunk/mapsforge-poi/.project
+END
+COPYING.LESSER
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1626/trunk/mapsforge-poi/COPYING.LESSER
+END
+POICategoriesOsmosis.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1626/trunk/mapsforge-poi/POICategoriesOsmosis.xsd
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1626/trunk/mapsforge-poi/COPYING
+END
+POICategoriesOsmosis.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1626/trunk/mapsforge-poi/POICategoriesOsmosis.xml
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/1626/trunk/mapsforge-poi/NEWS
+END
+.pmd
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/1626/trunk/mapsforge-poi/.pmd
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1626/trunk/mapsforge-poi/build.xml
+END

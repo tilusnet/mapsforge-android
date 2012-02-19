@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1800/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps
+END
+MapController.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/1755/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/MapController.java
+END
+FrameBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1755/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/FrameBuffer.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/1722/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/package-info.java
+END
+PausableThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1800/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/PausableThread.java
+END
+MapViewProjection.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/1755/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/MapViewProjection.java
+END
+MapZoomControls.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/1741/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/MapZoomControls.java
+END
+DebugSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/1755/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/DebugSettings.java
+END
+MapView.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1755/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/MapView.java
+END
+FpsCounter.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/1722/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/FpsCounter.java
+END
+MapScaleBar.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1784/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/MapScaleBar.java
+END
+MapActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1755/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/MapActivity.java
+END
+Projection.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/1722/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/Projection.java
+END
+MapViewPosition.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/1755/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/MapViewPosition.java
+END

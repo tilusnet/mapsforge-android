@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://mapsforge.org/mapsforge-preprocessing-conf"
+	elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://mapsforge.org/mapsforge-preprocessing-conf">
+
+	<xsd:element name="configuration" type="configuration"></xsd:element>
+	<xsd:element name="source" type="source" abstract="true"></xsd:element>
+	<xsd:element name="read-pbf" type="read-pbf" substitutionGroup="source"></xsd:element>
+	<xsd:element name="sink-source" type="sink-source" abstract="true"></xsd:element>
+	<xsd:element name="bbox-area-filter" type="bbox-area-filter" substitutionGroup="sink-source"></xsd:element>
+	<xsd:element name="polygon-area-filter" type="polygon-area-filter" substitutionGroup="sink-source"></xsd:element>
+	<xsd:element name="sink" type="sink" abstract="true"></xsd:element>
+	<xsd:element name="write-pbf" type="write-pbf" substitutionGroup="sink"></xsd:element>
+	<xsd:element name="mapfile-writer" type="mapfile-writer" substitutionGroup="sink"></xsd:element>
+	<xsd:element name="routinggraph-writer" type="routinggraph-writer" substitutionGroup="sink"></xsd:element>
+
+	<xsd:simpleType name="latitude">
+		<xsd:restriction base="xsd:double">
+			<xsd:minInclusive value="-90"></xsd:minInclusive>
+			<xsd:maxInclusive value="90"></xsd:maxInclusive>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="longitude">
+		<xsd:restriction base="xsd:double">
+			<xsd:minInclusive value="-180"></xsd:minInclusive>
+			<xsd:maxInclusive value="180"></xsd:maxInclusive>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:complexType name="configuration">
+		<xsd:sequence>
+			<xsd:element name="pipeline" type="pipeline" minOccurs="1" maxOccurs="unbounded"></xsd:element>
+		</xsd:sequence>
+        <xsd:attribute name="osmosis-home" type="xsd:string" use="required"></xsd:attribute>
+        <xsd:attribute name="working-dir" type="xsd:string" use="required"></xsd:attribute>
+    	<xsd:attribute name="output-dir" type="xsd:string" use="required"></xsd:attribute>
+        <xsd:attribute name="logging-dir" type="xsd:string" use="required"></xsd:attribute>
+        <xsd:attribute name="destination-dir" type="xsd:string" use="optional"></xsd:attribute>
+    	<xsd:attribute name="move" type="xsd:boolean" default="false" use="optional"></xsd:attribute>
+    </xsd:complexType>
+	
+	<xsd:complexType name="pipeline">
+		<xsd:sequence>
+			<xsd:element ref="source" maxOccurs="1" minOccurs="1"></xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+		<xsd:attribute name="output-dir" type="xsd:string" use="optional"></xsd:attribute>
+		<xsd:attribute name="logging-level" use="optional">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="FINE"></xsd:enumeration>
+					<xsd:enumeration value="FINER"></xsd:enumeration>
+					<xsd:enumeration value="FINEST"></xsd:enumeration>
+					<xsd:enumeration value="INFO"></xsd:enumeration>
+					<xsd:enumeration value="SEVERE"></xsd:enumeration>
+					<xsd:enumeration value="WARNING"></xsd:enumeration>
+					<xsd:enumeration value="ALL"></xsd:enumeration>
+					<xsd:enumeration value="OFF"></xsd:enumeration>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="source" abstract="true">
+		<xsd:sequence minOccurs="1">
+			<xsd:element ref="sink-source" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+			<xsd:element ref="sink" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="file" type="xsd:string" use="required"></xsd:attribute>
+	</xsd:complexType>
+	
+	<xsd:complexType name="read-pbf">
+		<xsd:complexContent>
+			<xsd:extension base="source"></xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	
+	<xsd:complexType name="sink-source" abstract="true">
+		<xsd:sequence minOccurs="1">
+			<xsd:element ref="sink-source" minOccurs="0" maxOccurs="unbounded"> </xsd:element>
+			<xsd:element ref="sink" minOccurs="0" maxOccurs="unbounded" ></xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="name" type="xsd:string" use="optional"></xsd:attribute>
+	</xsd:complexType>
+	
+	<xsd:complexType name="bbox-area-filter">
+		<xsd:complexContent>
+			<xsd:extension base="sink-source">
+				<xsd:attribute name="minlat" type="latitude" use="required"></xsd:attribute>
+				<xsd:attribute name="minlon" type="longitude" use="required"></xsd:attribute>
+				<xsd:attribute name="maxlat" type="latitude" use="required"></xsd:attribute>
+				<xsd:attribute name="maxlon" type="longitude" use="required"></xsd:attribute>
+				<xsd:attribute name="completeWays" type="xsd:boolean" use="optional" default="false"></xsd:attribute>
+				<xsd:attribute name="completeRelations" type="xsd:boolean" use="optional" default="false"></xsd:attribute>
+				<xsd:attribute name="clipIncompleteEntities" type="xsd:boolean" use="optional" default="false"></xsd:attribute>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="polygon-area-filter">
+		<xsd:complexContent>
+			<xsd:extension base="sink-source">
+				<xsd:attribute name="polygon-file" type="xsd:string" use="required"></xsd:attribute>
+				<xsd:attribute name="completeWays" type="xsd:boolean" use="optional" default="false"></xsd:attribute>
+				<xsd:attribute name="completeRelations" type="xsd:boolean" use="optional" default="false"></xsd:attribute>
+				<xsd:attribute name="clipIncompleteEntities" type="xsd:boolean" use="optional" default="false"></xsd:attribute>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="sink" abstract="true">
+		<xsd:attribute name="file" type="xsd:string" use="required"></xsd:attribute>
+		<xsd:attribute name="md5" type="xsd:boolean" use="optional" default="false"></xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="write-pbf">
+		<xsd:complexContent>
+			<xsd:extension base="sink">
+				<xsd:attribute name="omit-metadata" type="xsd:boolean" use="optional" default="false"></xsd:attribute>
+				<xsd:attribute name="compress" use="optional" default="none">
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:enumeration value="none"></xsd:enumeration>
+							<xsd:enumeration value="deflate"></xsd:enumeration>
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	
+	<xsd:complexType name="mapfile-writer">
+		<xsd:complexContent>
+			<xsd:extension base="sink">
+				<xsd:attribute name="type" use="optional" default="ram">
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:enumeration value="ram"></xsd:enumeration>
+							<xsd:enumeration value="hd"></xsd:enumeration>
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:attribute>
+				<xsd:attribute name="bbox" use="optional">
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:whiteSpace value="collapse"></xsd:whiteSpace>
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:attribute>
+				<xsd:attribute name="map-start-position" type="xsd:string" use="optional"></xsd:attribute>
+				<xsd:attribute name="comment" type="xsd:string" use="optional"></xsd:attribute>
+				<xsd:attribute name="waynode-compression" type="xsd:boolean" use="optional" default="true"></xsd:attribute>
+				<xsd:attribute name="pixel-filter" type="xsd:boolean" default="true" use="optional"></xsd:attribute>
+				<xsd:attribute name="polygon-clipping" type="xsd:boolean" use="optional" default="true"></xsd:attribute>
+				<xsd:attribute name="zoom-interval-conf" type="xsd:string" use="optional" default="8,0,11,14,12,21"></xsd:attribute>
+				<xsd:attribute name="thread-pool-size" use="optional">
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:int">
+							<xsd:minInclusive value="1"></xsd:minInclusive>
+							<xsd:maxInclusive value="128"></xsd:maxInclusive>
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:attribute>
+				<xsd:attribute name="debug-file" type="xsd:boolean" use="optional" default="false"></xsd:attribute>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="routinggraph-writer">
+		<xsd:complexContent>
+			<xsd:extension base="sink">
+				<xsd:attribute name="way-types" type="xsd:string" use="optional"></xsd:attribute>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+
+</xsd:schema>

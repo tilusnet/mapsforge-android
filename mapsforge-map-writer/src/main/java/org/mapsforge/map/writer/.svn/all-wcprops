@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/1818/trunk/mapsforge-map-writer/src/main/java/org/mapsforge/map/writer
+END
+BaseTileBasedDataProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/1810/trunk/mapsforge-map-writer/src/main/java/org/mapsforge/map/writer/BaseTileBasedDataProcessor.java
+END
+WayPolygonizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/1804/trunk/mapsforge-map-writer/src/main/java/org/mapsforge/map/writer/WayPolygonizer.java
+END
+HDTileBasedDataProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/1804/trunk/mapsforge-map-writer/src/main/java/org/mapsforge/map/writer/HDTileBasedDataProcessor.java
+END
+HDTileData.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/1804/trunk/mapsforge-map-writer/src/main/java/org/mapsforge/map/writer/HDTileData.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/1804/trunk/mapsforge-map-writer/src/main/java/org/mapsforge/map/writer/package-info.java
+END
+RAMTileBasedDataProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/1804/trunk/mapsforge-map-writer/src/main/java/org/mapsforge/map/writer/RAMTileBasedDataProcessor.java
+END
+OSMTagMapping.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1804/trunk/mapsforge-map-writer/src/main/java/org/mapsforge/map/writer/OSMTagMapping.java
+END
+RAMTileData.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/1804/trunk/mapsforge-map-writer/src/main/java/org/mapsforge/map/writer/RAMTileData.java
+END
+Serializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/1804/trunk/mapsforge-map-writer/src/main/java/org/mapsforge/map/writer/Serializer.java
+END
+DeltaEncoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/1804/trunk/mapsforge-map-writer/src/main/java/org/mapsforge/map/writer/DeltaEncoder.java
+END
+MapFileWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1818/trunk/mapsforge-map-writer/src/main/java/org/mapsforge/map/writer/MapFileWriter.java
+END

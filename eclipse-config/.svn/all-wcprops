@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/1749/trunk/eclipse-config
+END
+.pmd_ruleset.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1749/trunk/eclipse-config/.pmd_ruleset.xml
+END
+.checkstyle_rules.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1720/trunk/eclipse-config/.checkstyle_rules.xml
+END
+.checkstyle
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1649/trunk/eclipse-config/.checkstyle
+END
+.pmd
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1645/trunk/eclipse-config/.pmd
+END

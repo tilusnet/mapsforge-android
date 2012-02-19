@@ -1,0 +1,54 @@
+Version 0.2.4 (2011-06-28)
+--------------------------
++ AdvancedMapViewer now supports all location providers.
++ Snap to position can be toggled if current position is shown.
++ Support for multi-polygons in Overlay API
++ Support for long press events in Overlay API
++ Added metadata API for map files
++ Many other minor improvements and bugfixes.
+
+Version 0.2.3 (2011-05-12)
+--------------------------
++ License change from GPL3 to LGPL3.
++ Added animations to the MapView when zooming in and out.
++ The text size of the map renderer can be adjusted at runtime.
++ Rendering of symbols along ways, used for example on one-way roads.
++ The maximum zoom level of the MapView may now be set at runtime.
++ Many other minor improvements and bugfixes.
+
+Version 0.2.2 (2011-03-22)
+--------------------------
++ Improved the overlay API and implemented some new classes.
++ Better rendering of water areas and coastline situations.
++ The tag list of the mapfile-writer can now be configured via an XML file.
++ Added the possibility to render areas with a background pattern.
++ Integrated support for piste maps features.
++ Added a method to take a screenshot of the currently displayed map.
++ The minimum zoom level of the MapView may now be set at runtime.
++ Started to make the map tile cache on the memory card persistent.
++ Many other minor improvements and bugfixes.
+
+Version 0.2.1 (2011-02-10)
+--------------------------
++ Optimized binary map format, reduces the file size by 15-20%.
++ Rewritten overlay implementation with many new features and bug fixes.
++ Zoom level can now be changed by multi-tap and double-tap gestures.
++ The mapfile-writer supports hard disk as temporary storage device.
++ The mapfile-writer depends no longer on the JTS library and works faster.
++ Added support for a couple of OpenStreetMap tags.
++ Better rendering of way names.
++ Better rendering of coastline and water areas.
++ Many other minor improvements and bugfixes.
+
+Version 0.2.0 (2010-11-22)
+--------------------------
++ New binary map format for more detailed and faster map rendering.
++ Overlay API to display points, ways and polygons on top of the map.
++ Better label and symbol placement with collision avoidance.
++ The MapView now supports multi-touch and new tile download modes.
++ First release of the Osmosis plugin to generate binary map files.
++ Many other minor improvements and bugfixes.
+
+Version 0.1.0 (2010-06-27)
+--------------------------
+First public release, contains the android.map package.

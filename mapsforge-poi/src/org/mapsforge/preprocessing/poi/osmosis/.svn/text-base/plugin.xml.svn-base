@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!DOCTYPE plugin PUBLIC "-//JPF//Java Plug-in Manifest 1.0" "http://jpf.sourceforge.net/plugin_1_0.dtd">
+<plugin id="org.mapsforge.preprocessing.poi.osmosis.mapfilewriter" version="0.39">
+	<requires>
+	       <import plugin-id="org.openstreetmap.osmosis.core.plugin.Core" plugin-version="0.39" reverse-lookup="false"/>
+	</requires>
+	
+	<runtime>
+		<library id="mycode" path="/" type="code"/>
+ 	</runtime>
+ 	
+	<extension plugin-id="org.openstreetmap.osmosis.core.plugin.Core"
+		point-id="Task" id="mapsforge/mapfilewriter">
+		<parameter id="name" value="poi-writer" />
+		<parameter id="class"
+			value="org.mapsforge.preprocessing.poi.osmosis.MapsforgePluginLoader" />
+	</extension>
+<!--	<extension plugin-id="org.openstreetmap.osmosis.core.plugin.Core"
+	           point-id="Task" id="LibOSM/OsmBin-Tasks/writeOsmBin-0.6">
+	   <parameter id="name"
+	           value="writeOsmBin-0.6"/>
+	   <parameter id="class"
+		       value="org.openstreetmap.osm.data.osmbin.OSMBinPlugin"/>
+        </extension>-->
+</plugin>

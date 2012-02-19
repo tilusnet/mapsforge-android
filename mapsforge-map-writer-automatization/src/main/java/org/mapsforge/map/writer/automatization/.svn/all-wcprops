@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/1805/trunk/mapsforge-map-writer-automatization/src/main/java/org/mapsforge/map/writer/automatization
+END
+Source.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/1805/trunk/mapsforge-map-writer-automatization/src/main/java/org/mapsforge/map/writer/automatization/Source.java
+END
+FileOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/1805/trunk/mapsforge-map-writer-automatization/src/main/java/org/mapsforge/map/writer/automatization/FileOperation.java
+END
+ReadPbf.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/1805/trunk/mapsforge-map-writer-automatization/src/main/java/org/mapsforge/map/writer/automatization/ReadPbf.java
+END
+Sink.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/1805/trunk/mapsforge-map-writer-automatization/src/main/java/org/mapsforge/map/writer/automatization/Sink.java
+END
+Pipeline.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/1805/trunk/mapsforge-map-writer-automatization/src/main/java/org/mapsforge/map/writer/automatization/Pipeline.java
+END
+RoutinggraphWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/1805/trunk/mapsforge-map-writer-automatization/src/main/java/org/mapsforge/map/writer/automatization/RoutinggraphWriter.java
+END
+Configuration.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/1805/trunk/mapsforge-map-writer-automatization/src/main/java/org/mapsforge/map/writer/automatization/Configuration.java
+END
+MapfileWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/1805/trunk/mapsforge-map-writer-automatization/src/main/java/org/mapsforge/map/writer/automatization/MapfileWriter.java
+END
+WritePbf.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/1805/trunk/mapsforge-map-writer-automatization/src/main/java/org/mapsforge/map/writer/automatization/WritePbf.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/1805/trunk/mapsforge-map-writer-automatization/src/main/java/org/mapsforge/map/writer/automatization/package-info.java
+END
+SinkSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/1805/trunk/mapsforge-map-writer-automatization/src/main/java/org/mapsforge/map/writer/automatization/SinkSource.java
+END
+OsmosisRunner.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/1805/trunk/mapsforge-map-writer-automatization/src/main/java/org/mapsforge/map/writer/automatization/OsmosisRunner.java
+END
+PolygonAreaFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/1805/trunk/mapsforge-map-writer-automatization/src/main/java/org/mapsforge/map/writer/automatization/PolygonAreaFilter.java
+END
+BboxAreaFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/1805/trunk/mapsforge-map-writer-automatization/src/main/java/org/mapsforge/map/writer/automatization/BboxAreaFilter.java
+END
+ObjectFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/1805/trunk/mapsforge-map-writer-automatization/src/main/java/org/mapsforge/map/writer/automatization/ObjectFactory.java
+END

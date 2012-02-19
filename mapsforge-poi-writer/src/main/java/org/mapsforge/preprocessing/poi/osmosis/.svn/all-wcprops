@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1808/trunk/mapsforge-poi-writer/src/main/java/org/mapsforge/preprocessing/poi/osmosis
+END
+XMLPoiCategoryManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/1808/trunk/mapsforge-poi-writer/src/main/java/org/mapsforge/preprocessing/poi/osmosis/XMLPoiCategoryManager.java
+END
+POIWriterTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/1808/trunk/mapsforge-poi-writer/src/main/java/org/mapsforge/preprocessing/poi/osmosis/POIWriterTask.java
+END
+MapsforgePluginLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/1808/trunk/mapsforge-poi-writer/src/main/java/org/mapsforge/preprocessing/poi/osmosis/MapsforgePluginLoader.java
+END
+TagMappingResolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/1808/trunk/mapsforge-poi-writer/src/main/java/org/mapsforge/preprocessing/poi/osmosis/TagMappingResolver.java
+END
+POIWriterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/1808/trunk/mapsforge-poi-writer/src/main/java/org/mapsforge/preprocessing/poi/osmosis/POIWriterFactory.java
+END
+plugin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/1808/trunk/mapsforge-poi-writer/src/main/java/org/mapsforge/preprocessing/poi/osmosis/plugin.xml
+END

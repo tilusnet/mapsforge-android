@@ -1,0 +1,67 @@
+package org.mapsforge.preprocessing.routingGraph.graphCreation;
+
+option java_package = "org.mapsforge.routing.preprocessing.graph";
+option java_outer_classname = "GraphCreatorProtos";
+
+
+message GeoCoordinatePBF {
+	required double latitude = 1;
+	required double longitude = 2;
+}
+
+message KeyValuePairPBF {
+	optional string value = 1;
+	required string key = 2;
+}
+
+message RelationMemberPBF {
+	required uint64 memberId = 1;
+	optional MemberType memberType = 2;
+	optional string memberRole = 3;
+	
+	enum MemberType {
+    	NODE = 1;
+    	WAY = 2;
+    	RELATION = 3;
+  }
+	
+}
+
+message CompleteNodePBF {
+	required int32 id = 1;
+	optional GeoCoordinatePBF coordinate = 2;
+	repeated KeyValuePairPBF additionalTags = 3;
+}
+
+message CompleteEdgePBF {
+	required int32 id = 1;
+	optional int32 sourceID = 2;
+	optional int32 targetID = 3;
+	repeated GeoCoordinatePBF allWaypoints = 4;
+	optional string name = 5;
+	optional string type = 6;
+	optional bool roundabout = 7;
+	optional bool isOneWay = 8;
+	optional string ref = 9;
+	optional string destination = 10;
+	optional int32 weight = 11;
+	repeated KeyValuePairPBF additionalTags = 12;
+	repeated CompleteNodePBF allUsedNodes=13;
+}
+
+message CompleteVertexPBF {
+	required int32 id = 1;
+	optional GeoCoordinatePBF coordinate = 2;
+	repeated KeyValuePairPBF additionalTags = 3;
+}
+
+message CompleteRelationPBF {
+	repeated RelationMemberPBF member = 1;
+	repeated KeyValuePairPBF tags = 2;
+}
+
+message AllGraphDataPBF {
+	repeated CompleteRelationPBF allRelations = 1;
+	repeated CompleteEdgePBF allEdges = 2;
+	repeated CompleteVertexPBF allVertices = 3;	
+}

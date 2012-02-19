@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Thu Jul 29 10:09:28 CEST 2010
+onejar.license.required=true
+manifest.classpath=.
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=mapsforge_fat.jar
+manifest.mergeall=true
+manifest.mainclass=org.mapsforge.preprocessing.graph.Main
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=<po|mapsforge>~org/~mapsforge/~android/;<po|mapsforge>~org/~mapsforge/~preprocessing/~map/;<po|mapsforge>~org/~mapsforge/~preprocessing/~routing/;<po|mapsforge>~org/~mapsforge/~server/;<jar|android-1.5.jar>;<jar|hadoop-0.20.1-core.jar>;<jar|javaproj-1.0.8.jar>;<jar|jts-1.11.jar>;<jar|trove-2.1.0.jar>;<jar|xpp3_min-1.1.4c.jar>;<jar|junit-4.8.2.jar>;<jar|swingx-ws.jar>;<jar|swingx.jar>
+includes=

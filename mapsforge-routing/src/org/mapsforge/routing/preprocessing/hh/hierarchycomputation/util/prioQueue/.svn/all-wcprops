@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/hierarchycomputation/util/prioQueue
+END
+BinaryMinHeap.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/hierarchycomputation/util/prioQueue/BinaryMinHeap.java
+END
+IBinaryHeapItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/hierarchycomputation/util/prioQueue/IBinaryHeapItem.java
+END

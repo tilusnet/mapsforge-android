@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration 
+	osmosis-home="/export/local-1/public/mapsforge/preprocessing/bin/osmosis-0.39"
+	working-dir="/export/local-1/public/mapsforge/preprocessing"
+	logging-dir="log" 
+	output-dir="output"
+	destination-dir="/web/ftp.mapsforge.org/public"
+	move="false"  
+	xmlns="http://mapsforge.org/mapsforge-preprocessing-conf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://mapsforge.org/mapsforge-preprocessing-conf mapsforge-preprocessing-conf.xsd ">
+
+  <pipeline name="france.pbf" output-dir="../osm-data/europe">
+    <read-pbf file="osm-data/europe.osm.pbf">    	
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/france.poly" clipIncompleteEntities="true">
+	    		<write-pbf file="france.osm.pbf" omit-metadata="false" compress="deflate" md5="false"/>
+	    	</polygon-area-filter>
+    </read-pbf>
+  </pipeline>
+
+
+
+<!-- MAP FILES -->
+
+  <pipeline name="alsace.map" output-dir="europe/france">
+	<read-pbf file="osm-data/europe/france.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/france/alsace.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="alsace-0.2.4.map" type="ram" map-start-position="48.079283,7.359509" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="aquitaine.map" output-dir="europe/france">
+	<read-pbf file="osm-data/europe/france.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/france/aquitaine.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="aquitaine-0.2.4.map" type="ram" map-start-position="44.837856,-0.580516" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="auvergne.map" output-dir="europe/france">
+	<read-pbf file="osm-data/europe/france.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/france/auvergne.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="auvergne-0.2.4.map" type="ram" map-start-position="45.777521,3.086557" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="basse-normandie.map" output-dir="europe/france">
+	<read-pbf file="osm-data/europe/france.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/france/basse-normandie.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="basse-normandie-0.2.4.map" type="ram" map-start-position="49.182643,-0.370638" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="bourgogne.map" output-dir="europe/france">
+	<read-pbf file="osm-data/europe/france.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/france/bourgogne.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="bourgogne-0.2.4.map" type="ram" map-start-position="47.322141,5.040622" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="bretagne.map" output-dir="europe/france">
+	<read-pbf file="osm-data/europe/france.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/france/bretagne.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="bretagne-0.2.4.map" type="ram" map-start-position="48.114358,-1.680404" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="centre.map" output-dir="europe/france">
+	<read-pbf file="osm-data/europe/france.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/france/centre.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="centre-0.2.4.map" type="ram" map-start-position="47.903225,1.908724" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="champagne-ardenne.map" output-dir="europe/france">
+	<read-pbf file="osm-data/europe/france.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/france/champagne-ardenne.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="champagne-ardenne-0.2.4.map" type="ram" map-start-position="48.95658,4.363933" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="franche-comte.map" output-dir="europe/france">
+	<read-pbf file="osm-data/europe/france.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/france/franche-comte.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="franche-comte-0.2.4.map" type="ram" map-start-position="47.237986,6.023962" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="haute-normandie.map" output-dir="europe/france">
+	<read-pbf file="osm-data/europe/france.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/france/haute-normandie.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="haute-normandie-0.2.4.map" type="ram" map-start-position="49.443519,1.098869" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="ile-de-france.map" output-dir="europe/france">
+	<read-pbf file="osm-data/europe/france.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/france/ile-de-france.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="ile-de-france-0.2.4.map" type="ram" map-start-position="48.856485,2.352265" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="languedoc-roussillon.map" output-dir="europe/france">
+	<read-pbf file="osm-data/europe/france.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/france/languedoc-roussillon.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="languedoc-roussillon-0.2.4.map" type="ram" map-start-position="43.610923,3.87668" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="limousin.map" output-dir="europe/france">
+	<read-pbf file="osm-data/europe/france.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/france/limousin.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="limousin-0.2.4.map" type="ram" map-start-position="45.833255,1.260359" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="lorraine.map" output-dir="europe/france">
+	<read-pbf file="osm-data/europe/france.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/france/lorraine.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="lorraine-0.2.4.map" type="ram" map-start-position="49.119796,6.176183" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="midi-pyrenees.map" output-dir="europe/france">
+	<read-pbf file="osm-data/europe/france.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/france/midi-pyrenees.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="midi-pyrenees-0.2.4.map" type="ram" map-start-position="43.604557,1.443329" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="nord-pas-de-calais.map" output-dir="europe/france">
+	<read-pbf file="osm-data/europe/france.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/france/nord-pas-de-calais.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="nord-pas-de-calais-0.2.4.map" type="ram" map-start-position="50.629735,3.057665" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="pays-de-la-loire.map" output-dir="europe/france">
+	<read-pbf file="osm-data/europe/france.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/france/pays-de-la-loire.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="pays-de-la-loire-0.2.4.map" type="ram" map-start-position="47.218548,-1.554437" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="picardie.map" output-dir="europe/france">
+	<read-pbf file="osm-data/europe/france.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/france/picardie.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="picardie-0.2.4.map" type="ram" map-start-position="49.894275,2.295542" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="poitou-charentes.map" output-dir="europe/france">
+	<read-pbf file="osm-data/europe/france.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/france/poitou-charentes.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="poitou-charentes-0.2.4.map" type="ram" map-start-position="46.58028,0.34005" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="provence-alpes-cote-d-azur.map" output-dir="europe/france">
+	<read-pbf file="osm-data/europe/france.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/france/provence-alpes-cote-d-azur.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="provence-alpes-cote-d-azur-0.2.4.map" type="ram" map-start-position="43.29534,5.374632" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="rhone-alpes.map" output-dir="europe/france">
+	<read-pbf file="osm-data/europe/france.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/france/rhone-alpes.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="rhone-alpes-0.2.4.map" type="ram" map-start-position="45.763788,4.835744" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="france.map" output-dir="europe" >
+  	<read-pbf file="osm-data/europe/france.osm.pbf">
+  		<mapfile-writer file="france-0.2.4.map" type="hd" map-start-position="48.856478,2.352308" md5="true"/>
+  	</read-pbf>
+  </pipeline>
+
+</configuration>

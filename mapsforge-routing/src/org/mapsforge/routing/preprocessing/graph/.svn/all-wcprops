@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/graph
+END
+RoutingGraphCreatorPluginLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/graph/RoutingGraphCreatorPluginLoader.java
+END
+KeyValuePair.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/graph/KeyValuePair.java
+END
+CompleteVertex.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/graph/CompleteVertex.java
+END
+CompleteRelation.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/graph/CompleteRelation.java
+END
+RoutingGraphCreatorTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/graph/RoutingGraphCreatorTask.java
+END
+plugin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/graph/plugin.xml
+END
+CompleteNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/graph/CompleteNode.java
+END
+RoutingGraphCreatorFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/graph/RoutingGraphCreatorFactory.java
+END
+config.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/graph/config.xsd
+END
+XMLReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/graph/XMLReader.java
+END
+config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/graph/config.xml
+END
+ProtobufSerializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/graph/ProtobufSerializer.java
+END
+pbf-Config.proto
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/graph/pbf-Config.proto
+END
+ConfigObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/graph/ConfigObject.java
+END
+CompleteEdge.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/graph/CompleteEdge.java
+END

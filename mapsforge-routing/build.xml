@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="mapsforge-routing">
+	<import file="build-global-properties.xml"/>
+
+
+	<!-- ################## mapsforge-hh-graph-writer-jar ################## -->
+
+	
+	<!-- Create the JAR file -->
+	<target name="mapsforge-hh-graph-writer-jar-create">
+		<mkdir dir="${mapsforge.dist}" />
+		<!-- Include source code and generated class files, avoid duplicates -->
+		<jar destfile="${hh-writer-jar-path}" duplicate="preserve">
+			<fileset dir="${mapsforge.src}" excludes="org/mapsforge/routing/preprocessing/hh/osmosis/plugin.xml" includes="org/mapsforge/routing/preprocessing/hh/osmosis/" />
+			<fileset dir="${mapsforge.bin}" excludes="org/mapsforge/routing/preprocessing/hh/osmosis/plugin.xml" includes="org/mapsforge/routing/preprocessing/hh/osmosis/" />						
+			<fileset dir="${mapsforge.src}" includes="org/mapsforge/core/Rect.java,
+						org/mapsforge/core/GeoCoordinate.java,
+						org/mapsforge/core/MercatorProjection.java,
+						org/mapsforge/core/WGS84.java" />
+			<fileset dir="${mapsforge.bin}" includes="org/mapsforge/core/Rect.class,
+						org/mapsforge/core/GeoCoordinate.class,
+						org/mapsforge/core/MercatorProjection.class,
+						org/mapsforge/core/WGS84.class" />
+			<fileset dir="${mapsforge.src}/org/mapsforge/routing/preprocessing/hh/osmosis/" includes="plugin.xml" />
+			<fileset refid="info" />
+		</jar>
+		<antcall target="eclipse-refresh">
+			<param name="resource" value="mapsforge/${mapsforge.dist}" />
+		</antcall>
+	</target>
+
+
+	<!-- Sign and verify the JAR file if the keystore exists -->
+	<target name="mapsforge-hh-graph-writer-jar-sign" depends="check-for-keystore,mapsforge-hh-graph-writer-jar-create" if="keystore.present">
+		<signjar jar="${hh-writer-jar-path}" keystore="${mapsforge.keystore.location}" storepass="${mapsforge.keystore.pass}" alias="${mapsforge.keystore.alias}" keypass="${mapsforge.key.pass}" />
+		<!-- Verify the signed JAR file and stop if verification was not successful -->
+		<exec executable="jarsigner" failonerror="true">
+			<arg value="-verify" />
+			<arg value="${hh-writer-jar-path}" />
+		</exec>
+		<antcall target="eclipse-refresh">
+			<param name="resource" value="mapsforge/${mapsforge.dist}" />
+		</antcall>
+	</target>
+
+
+	<!-- Copy the created JAR file to the plugins directory -->
+	<target name="mapsforge-hh-graph-writer-jar-copy" depends="mapsforge-hh-graph-writer-jar-sign">
+		<copy overwrite="true" file="${hh-writer-jar-path}" todir="${user.home}/.openstreetmap/osmosis/plugins" />
+	</target>
+
+
+	<!-- ################## mapsforge-onboard-routing.jar ################## -->
+	
+	<!-- Create the JAR file -->
+	<target name="mapsforge-onboard-routing-jar-create">
+		<mkdir dir="${mapsforge.dist}" />
+		<!-- Include source code and generated class files, avoid duplicates -->
+		<jar destfile="${hh-onboard-jar-path}" duplicate="preserve">
+			<fileset dir="${mapsforge.bin}" includes="org/mapsforge/routing/android/hh/" />
+			<fileset dir="${mapsforge.src}" includes="org/mapsforge/routing/android/hh/" />
+			<fileset dir="${mapsforge.bin}" includes="org/mapsforge/core/" />
+			<fileset dir="${mapsforge.src}" includes="org/mapsforge/core/" />
+			<fileset dir="${mapsforge.bin}" includes="org/mapsforge/routing/preprocessing/hh/mobile/HHGlobals.*" />
+			<fileset dir="${mapsforge.src}" includes="org/mapsforge/routing/preprocessing/hh/mobile/HHGlobals.*" />
+			<fileset dir="${mapsforge.bin}" includes="org/mapsforge/routing/preprocessing/hh/hierarchyComputation/" />
+			<fileset dir="${mapsforge.src}" includes="org/mapsforge/routing/preprocessing/hh/hierarchyComputation/" />
+		</jar>
+		<antcall target="eclipse-refresh">
+			<param name="resource" value="mapsforge/${mapsforge.dist}" />
+		</antcall>
+	</target>
+
+
+	<!-- Sign and verify the JAR file if the keystore exists -->
+	<target name="mapsforge-onboard-routing-jar-sign" depends="check-for-keystore,mapsforge-onboard-routing-jar-create" if="keystore.present">
+		<signjar jar="${hh-onboard-jar-path}" keystore="${mapsforge.keystore.location}" storepass="${mapsforge.keystore.pass}" alias="${mapsforge.keystore.alias}" keypass="${mapsforge.key.pass}" />
+		<!-- Verify the signed JAR file and stop if verification was not successful -->
+		<exec executable="jarsigner" failonerror="true">
+			<arg value="-verify" />
+			<arg value="${hh-onboard-jar-path}" />
+		</exec>
+		<antcall target="eclipse-refresh">
+			<param name="resource" value="mapsforge/${mapsforge.dist}" />
+		</antcall>
+	</target>
+
+	<!-- ################## mapsforge-offboard-routing.jar ################## -->
+	
+	<!-- Create the JAR file -->
+	<target name="mapsforge-offboard-routing-jar-create">
+		<mkdir dir="${mapsforge.dist}" />
+		<!-- Include source code and generated class files, avoid duplicates -->
+		<jar destfile="${hh-offboard-jar-path}" duplicate="preserve">
+			<fileset dir="${mapsforge.bin}" includes="org/mapsforge/routing/server/hh/" />
+			<fileset dir="${mapsforge.src}" includes="org/mapsforge/routing/server/hh/" />
+			<fileset dir="${mapsforge.bin}" includes="org/mapsforge/routing/preprocessing/hh/hierarchycomputation/" />
+			<fileset dir="${mapsforge.src}" includes="org/mapsforge/routing/preprocessing/hh/hierarchycomputation/" />
+			<fileset dir="${mapsforge.bin}" includes="org/mapsforge/routing/preprocessing/hh/dao/" />
+			<fileset dir="${mapsforge.src}" includes="org/mapsforge/routing/preprocessing/hh/dao/" />
+			<fileset dir="${mapsforge.bin}" includes="org/mapsforge/routing/preprocessing/hh/model/" />
+			<fileset dir="${mapsforge.src}" includes="org/mapsforge/routing/preprocessing/hh/model/" />
+			<fileset dir="${mapsforge.bin}" includes="org/mapsforge/core/" />
+			<fileset dir="${mapsforge.src}" includes="org/mapsforge/core/" />
+			<fileset refid="info" />
+		</jar>
+		<antcall target="eclipse-refresh">
+			<param name="resource" value="mapsforge/${mapsforge.dist}" />
+		</antcall>
+	</target>
+
+
+	<!-- Sign and verify the JAR file if the keystore exists -->
+	<target name="mapsforge-offboard-routing-jar-sign" depends="check-for-keystore,mapsforge-offboard-routing-jar-create" if="keystore.present">
+		<signjar jar="${hh-offboard-jar-path}" keystore="${mapsforge.keystore.location}" storepass="${mapsforge.keystore.pass}" alias="${mapsforge.keystore.alias}" keypass="${mapsforge.key.pass}" />
+		<!-- Verify the signed JAR file and stop if verification was not successful -->
+		<exec executable="jarsigner" failonerror="true">
+			<arg value="-verify" />
+			<arg value="${hh-offboard-jar-path}" />
+		</exec>
+		<antcall target="eclipse-refresh">
+			<param name="resource" value="mapsforge/${mapsforge.dist}" />
+		</antcall>
+	</target>
+</project>

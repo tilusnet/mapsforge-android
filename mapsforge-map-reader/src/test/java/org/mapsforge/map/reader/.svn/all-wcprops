@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/1819/trunk/mapsforge-map-reader/src/test/java/org/mapsforge/map/reader
+END
+MapDatabaseEmptyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/1791/trunk/mapsforge-map-reader/src/test/java/org/mapsforge/map/reader/MapDatabaseEmptyTest.java
+END
+DeserializerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1721/trunk/mapsforge-map-reader/src/test/java/org/mapsforge/map/reader/DeserializerTest.java
+END
+MapDatabaseWithDataTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/1791/trunk/mapsforge-map-reader/src/test/java/org/mapsforge/map/reader/MapDatabaseWithDataTest.java
+END
+DummyMapDatabaseCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/1790/trunk/mapsforge-map-reader/src/test/java/org/mapsforge/map/reader/DummyMapDatabaseCallback.java
+END
+MapDatabaseFileHeaderTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/1819/trunk/mapsforge-map-reader/src/test/java/org/mapsforge/map/reader/MapDatabaseFileHeaderTest.java
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh
+END
+config.properties
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/config.properties
+END
+highwayLevel2AverageSpeed.properties
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/highwayLevel2AverageSpeed.properties
+END
+CommandLineUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/CommandLineUtil.java
+END

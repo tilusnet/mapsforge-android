@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/1584/trunk/mapsforge-routing
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1584/trunk/mapsforge-routing/.classpath
+END
+PMD_ruleset.xml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1584/trunk/mapsforge-routing/PMD_ruleset.xml
+END
+COPYING.LESSER
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1584/trunk/mapsforge-routing/COPYING.LESSER
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1584/trunk/mapsforge-routing/.project
+END
+build-global-properties.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1584/trunk/mapsforge-routing/build-global-properties.xml
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1584/trunk/mapsforge-routing/COPYING
+END
+build-create-hh-graph.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1584/trunk/mapsforge-routing/build-create-hh-graph.xml
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1584/trunk/mapsforge-routing/NEWS
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1584/trunk/mapsforge-routing/build.xml
+END
+.pmd
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1584/trunk/mapsforge-routing/.pmd
+END

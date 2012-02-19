@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1819/trunk/mapsforge-map-reader/src/test/resources/file_header
+END
+file_header.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1791/trunk/mapsforge-map-reader/src/test/resources/file_header/file_header.sh
+END
+file_header.map
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1819/trunk/mapsforge-map-reader/src/test/resources/file_header/file_header.map
+END
+file_header.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1791/trunk/mapsforge-map-reader/src/test/resources/file_header/file_header.xml
+END

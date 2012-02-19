@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1755/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/inputhandling
+END
+ZoomAnimator.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/1755/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/inputhandling/ZoomAnimator.java
+END
+TouchEventHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/1722/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/inputhandling/TouchEventHandler.java
+END
+SingleTouchHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/1741/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/inputhandling/SingleTouchHandler.java
+END
+LongPressDetector.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/1722/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/inputhandling/LongPressDetector.java
+END
+MapMover.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/1755/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/inputhandling/MapMover.java
+END
+MultiTouchHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/1741/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/inputhandling/MultiTouchHandler.java
+END
+ScaleListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/1722/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/inputhandling/ScaleListener.java
+END

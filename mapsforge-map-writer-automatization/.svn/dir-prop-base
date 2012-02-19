@@ -1,0 +1,13 @@
+K 10
+svn:ignore
+V 93
+target
+.checkstyle
+.checkstyle_rules.xml
+.classpath
+.pmd
+.pmd_ruleset.xml
+.project
+.settings
+
+END

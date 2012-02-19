@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1804/trunk/mapsforge-map-writer/src/test/java/org/mapsforge/map/writer/model
+END
+GeoCoordinateTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/1804/trunk/mapsforge-map-writer/src/test/java/org/mapsforge/map/writer/model/GeoCoordinateTest.java
+END
+MercatorProjectionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/1804/trunk/mapsforge-map-writer/src/test/java/org/mapsforge/map/writer/model/MercatorProjectionTest.java
+END
+RectTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/1804/trunk/mapsforge-map-writer/src/test/java/org/mapsforge/map/writer/model/RectTest.java
+END

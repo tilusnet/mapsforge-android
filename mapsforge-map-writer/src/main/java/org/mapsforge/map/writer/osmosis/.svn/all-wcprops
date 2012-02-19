@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1818/trunk/mapsforge-map-writer/src/main/java/org/mapsforge/map/writer/osmosis
+END
+MapFileWriterPluginLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/1804/trunk/mapsforge-map-writer/src/main/java/org/mapsforge/map/writer/osmosis/MapFileWriterPluginLoader.java
+END
+MapFileWriterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/1804/trunk/mapsforge-map-writer/src/main/java/org/mapsforge/map/writer/osmosis/MapFileWriterFactory.java
+END
+MapFileWriterTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/1818/trunk/mapsforge-map-writer/src/main/java/org/mapsforge/map/writer/osmosis/MapFileWriterTask.java
+END

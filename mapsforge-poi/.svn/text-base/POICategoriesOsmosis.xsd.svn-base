@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/test"
+	xmlns:tns="http://www.example.org/test" elementFormDefault="qualified">
+
+	<element name="category">
+		<complexType>
+			<sequence>
+				<element ref="tns:category" minOccurs="0" maxOccurs="unbounded"></element>
+				<element ref="tns:mapping" minOccurs="0" maxOccurs="unbounded"></element>
+			</sequence>
+			<attribute name="title" use="required"></attribute>
+		</complexType>
+	</element>
+
+	<element name="mapping">
+		<complexType>
+			<attribute name="tag" use="required"></attribute>
+		</complexType>
+	</element>
+
+</schema>

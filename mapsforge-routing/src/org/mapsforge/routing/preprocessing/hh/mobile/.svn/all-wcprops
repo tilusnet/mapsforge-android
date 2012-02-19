@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/mobile
+END
+Graph.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/mobile/Graph.java
+END
+HHBinaryFileWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/mobile/HHBinaryFileWriter.java
+END
+ClusteringEvaluator.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/mobile/ClusteringEvaluator.java
+END
+KCenterClusteringAlgorithm.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/mobile/KCenterClusteringAlgorithm.java
+END
+HHGlobals.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/mobile/HHGlobals.java
+END
+Edge.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/mobile/Edge.java
+END
+ClusterBlockMapping.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/mobile/ClusterBlockMapping.java
+END
+Serializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/mobile/Serializer.java
+END
+QuadTreeClustering.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/mobile/QuadTreeClustering.java
+END
+BitArrayOutputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/mobile/BitArrayOutputStream.java
+END
+Vertex.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/mobile/Vertex.java
+END
+Clustering.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/mobile/Clustering.java
+END
+QuadTreeClusteringAlgorithm.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/mobile/QuadTreeClusteringAlgorithm.java
+END
+Cluster.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/mobile/Cluster.java
+END
+DijkstraAlgorithm.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/mobile/DijkstraAlgorithm.java
+END
+AddressLookupTableWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/mobile/AddressLookupTableWriter.java
+END
+StaticRTreeWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/mobile/StaticRTreeWriter.java
+END
+BlockWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/mobile/BlockWriter.java
+END
+LevelGraph.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/mobile/LevelGraph.java
+END
+KCenterClustering.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/mobile/KCenterClustering.java
+END

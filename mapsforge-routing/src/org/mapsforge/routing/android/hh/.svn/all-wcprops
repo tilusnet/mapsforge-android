@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/android/hh
+END
+HHRouter.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/android/hh/HHRouter.java
+END
+ObjectPool.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/android/hh/ObjectPool.java
+END
+Cache.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/android/hh/Cache.java
+END
+HHAlgorithm.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/android/hh/HHAlgorithm.java
+END
+Evaluation.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/android/hh/Evaluation.java
+END
+DummyCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/android/hh/DummyCache.java
+END
+Pointer.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/android/hh/Pointer.java
+END
+CacheItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/android/hh/CacheItem.java
+END
+DijkstraAlgorithm.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/android/hh/DijkstraAlgorithm.java
+END
+Deserializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/android/hh/Deserializer.java
+END
+HHEdge.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/android/hh/HHEdge.java
+END
+LRUCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/android/hh/LRUCache.java
+END
+Offset.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/android/hh/Offset.java
+END
+AddressLookupTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/android/hh/AddressLookupTable.java
+END
+StaticRTree.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/android/hh/StaticRTree.java
+END
+HHRoutingGraph.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/android/hh/HHRoutingGraph.java
+END
+Block.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/android/hh/Block.java
+END
+HHVertex.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/android/hh/HHVertex.java
+END

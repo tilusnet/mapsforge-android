@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration 
+	osmosis-home="/export/local-1/public/mapsforge/preprocessing/bin/osmosis-0.39"
+	working-dir="/export/local-1/public/mapsforge/preprocessing"
+	logging-dir="log" 
+	output-dir="output"
+	destination-dir="/web/ftp.mapsforge.org/public/maps"
+	move="false"  
+	xmlns="http://mapsforge.org/mapsforge-preprocessing-conf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://mapsforge.org/mapsforge-preprocessing-conf mapsforge-preprocessing-conf.xsd ">
+
+  <pipeline name="europe.pbf" output-dir="../osm-data">
+    <read-pbf file="osm-data/planet.osm.pbf">    	
+    	<bbox-area-filter maxlat="72.60712" minlat="33.266602" maxlon="45.703125" minlon="-12.128906" clipIncompleteEntities="true">
+	  <write-pbf file="europe.osm.pbf" omit-metadata="false" compress="deflate" md5="true"/>
+    	</bbox-area-filter>
+    </read-pbf>
+  </pipeline>
+
+
+  <pipeline name="germany.pbf" output-dir="../osm-data/europe">
+    <read-pbf file="osm-data/europe.osm.pbf">    	
+	  	<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/germany.poly" clipIncompleteEntities="true">
+	    		<write-pbf file="germany.osm.pbf" omit-metadata="false" compress="deflate" md5="false"/>
+	    	</polygon-area-filter>
+    </read-pbf>
+  </pipeline>
+
+  <pipeline name="germany.map" output-dir="europe" >
+  	<read-pbf file="osm-data/europe/germany.osm.pbf">
+  		<mapfile-writer file="germany-0.2.4.map" type="hd" map-start-position="52.518682,13.376123" md5="true" />
+  	</read-pbf>
+  </pipeline>
+
+  <pipeline name="great_britain.map" output-dir="europe" >
+  	<read-pbf file="osm-data/europe.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/great_britain.poly" clipIncompleteEntities="true">
+  		  <mapfile-writer file="great_britain-0.2.4.map" type="hd" map-start-position="51.499266,-0.124787" md5="true"/>
+	    	</polygon-area-filter>
+  	</read-pbf>
+  </pipeline>
+  <pipeline name="italy.map" output-dir="europe" >
+  	<read-pbf file="osm-data/europe.osm.pbf">
+	        <polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/italy.poly" clipIncompleteEntities="true">
+  		  <mapfile-writer file="italy-0.2.4.map" type="hd" map-start-position="41.890522,12.494245" md5="true"/>
+	    	</polygon-area-filter>
+  	</read-pbf>
+  </pipeline>
+
+  <pipeline name="austria.map" output-dir="europe" >
+  	<read-pbf file="osm-data/europe.osm.pbf">
+	  	<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/austria.poly" clipIncompleteEntities="true">
+  		  <mapfile-writer file="austria-0.2.4.map" type="ram" map-start-position="48.208609,16.373148" md5="true" />
+	    	</polygon-area-filter>
+  	</read-pbf>
+  </pipeline>
+
+  <pipeline name="denmark.pbf" output-dir="europe">
+    <read-pbf file="osm-data/europe.osm.pbf">    	
+	  	<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/denmark.poly" clipIncompleteEntities="true">
+  		  <mapfile-writer file="denmark-0.2.4.map" type="ram" map-start-position="55.6882,12.5638" md5="true" />
+	    	</polygon-area-filter>
+    </read-pbf>
+  </pipeline>
+
+  <pipeline name="finland.pbf" output-dir="europe">
+    <read-pbf file="osm-data/europe.osm.pbf">    	
+	  	<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/finland.poly" clipIncompleteEntities="true">
+  		  <mapfile-writer file="finland-0.2.4.map" type="ram" map-start-position="60.1666,24.9435" md5="true" />
+	    	</polygon-area-filter>
+    </read-pbf>
+  </pipeline>
+
+  <pipeline name="switzerland.map" output-dir="europe" >
+  	<read-pbf file="osm-data/europe.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/switzerland.poly" clipIncompleteEntities="true">
+  		  <mapfile-writer file="switzerland-0.2.4.map" type="ram" map-start-position="46.948395,7.445351" md5="true"/>
+	    	</polygon-area-filter>
+  	</read-pbf>
+  </pipeline>
+
+  <pipeline name="belgium.pbf" output-dir="europe">
+    <read-pbf file="osm-data/europe.osm.pbf">    	
+	  	<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/belgium.poly" clipIncompleteEntities="true">
+  		  <mapfile-writer file="belgium-0.2.4.map" type="ram" map-start-position="50.850323,4.351729" md5="true" />
+	    	</polygon-area-filter>
+    </read-pbf>
+  </pipeline>
+
+  <pipeline name="norway.pbf" output-dir="europe">
+    <read-pbf file="osm-data/europe.osm.pbf">    	
+	  	<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/norway.poly" clipIncompleteEntities="true">
+  		  <mapfile-writer file="norway-0.2.4.map" type="ram" map-start-position="59.9133,10.7391" md5="true" />
+	    	</polygon-area-filter>
+    </read-pbf>
+  </pipeline>
+
+  <pipeline name="luxembourg.pbf" output-dir="europe">
+    <read-pbf file="osm-data/europe.osm.pbf">    	
+	  	<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/luxembourg.poly" clipIncompleteEntities="true">
+  		  <mapfile-writer file="luxembourg-0.2.4.map" type="ram" map-start-position="49.612093,6.131541" md5="true" />
+	    	</polygon-area-filter>
+    </read-pbf>
+  </pipeline>
+
+  <pipeline name="spain.pbf" output-dir="europe">
+    <read-pbf file="osm-data/europe.osm.pbf">    	
+	  	<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/spain.poly" clipIncompleteEntities="true">
+  		  <mapfile-writer file="spain-0.2.4.map" type="ram" map-start-position="40.416608,-3.700451" md5="true" />
+	    	</polygon-area-filter>
+    </read-pbf>
+  </pipeline>
+
+  <pipeline name="sweden.pbf" output-dir="europe">
+    <read-pbf file="osm-data/europe.osm.pbf">    	
+	  	<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/sweden.poly" clipIncompleteEntities="true">
+  		  <mapfile-writer file="sweden-0.2.4.map" type="ram" map-start-position="59.3308,18.0613" md5="true" />
+	    	</polygon-area-filter>
+    </read-pbf>
+  </pipeline>
+
+
+  <pipeline name="portugal.pbf" output-dir="europe">
+    <read-pbf file="osm-data/europe.osm.pbf">    	
+	  	<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/portugal.poly" clipIncompleteEntities="true">
+  		  <mapfile-writer file="portugal-0.2.4.map" type="ram" map-start-position="41.150223,-8.61032" md5="true" />
+	    	</polygon-area-filter>
+    </read-pbf>
+  </pipeline>
+
+
+
+  <pipeline name="baden-wuerttemberg.map" output-dir="europe/germany">
+	<read-pbf file="osm-data/europe/germany.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/germany/baden-wuerttemberg.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="baden-wuerttemberg-0.2.4.map" type="ram" map-start-position="48.784092,9.181652" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+   <pipeline name="bayern.map" output-dir="europe/germany">
+	<read-pbf file="osm-data/europe/germany.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/germany/bayern.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="bayern-0.2.4.map" type="ram" map-start-position="48.140203,11.558347" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+   <pipeline name="berlin.map" output-dir="europe/germany">
+	<read-pbf file="osm-data/europe/germany.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/germany/berlin.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="berlin-0.2.4.map" type="ram" map-start-position="52.525582,13.370061" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+   <pipeline name="brandenburg.map" output-dir="europe/germany">
+	<read-pbf file="osm-data/europe/germany.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/germany/brandenburg.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="brandenburg-0.2.4.map" type="ram" map-start-position="52.391486,13.06622" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+   <pipeline name="bremen.map" output-dir="europe/germany">
+	<read-pbf file="osm-data/europe/germany.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/germany/bremen.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="bremen-0.2.4.map" type="ram" map-start-position="53.083444,8.813782" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+   <pipeline name="hamburg.map" output-dir="europe/germany">
+	<read-pbf file="osm-data/europe/germany.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/germany/hamburg.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="hamburg-0.2.4.map" type="ram" map-start-position="53.553223,10.007021" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+   <pipeline name="hessen.map" output-dir="europe/germany">
+	<read-pbf file="osm-data/europe/germany.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/germany/hessen.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="hessen-0.2.4.map" type="ram" map-start-position="50.070748,8.243759" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+   <pipeline name="mecklenburg-vorpommern.map" output-dir="europe/germany">
+	<read-pbf file="osm-data/europe/germany.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/germany/mecklenburg-vorpommern.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="mecklenburg-vorpommern-0.2.4.map" type="ram" map-start-position="53.634397,11.407306" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+   <pipeline name="niedersachsen.map" output-dir="europe/germany">
+	<read-pbf file="osm-data/europe/germany.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/germany/niedersachsen.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="niedersachsen-0.2.4.map" type="ram" map-start-position="52.377014,9.741676" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+   <pipeline name="nordrhein-westfalen.map" output-dir="europe/germany">
+	<read-pbf file="osm-data/europe/germany.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/germany/nordrhein-westfalen.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="nordrhein-westfalen-0.2.4.map" type="ram" map-start-position="51.219707,6.794465" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+   <pipeline name="rheinland-pfalz.map" output-dir="europe/germany">
+	<read-pbf file="osm-data/europe/germany.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/germany/rheinland-pfalz.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="rheinland-pfalz-0.2.4.map" type="ram" map-start-position="50.001105,8.258736" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+   <pipeline name="saarland.map" output-dir="europe/germany">
+	<read-pbf file="osm-data/europe/germany.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/germany/saarland.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="saarland-0.2.4.map" type="ram" map-start-position="49.241166,6.990352" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+   <pipeline name="sachsen-anhalt.map" output-dir="europe/germany">
+	<read-pbf file="osm-data/europe/germany.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/germany/sachsen-anhalt.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="sachsen-anhalt-0.2.4.map" type="ram" map-start-position="52.130669,11.628792" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+   <pipeline name="sachsen.map" output-dir="europe/germany">
+	<read-pbf file="osm-data/europe/germany.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/germany/sachsen.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="sachsen-0.2.4.map" type="ram" map-start-position="51.040557,13.731966" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+   <pipeline name="schleswig-holstein.map" output-dir="europe/germany">
+	<read-pbf file="osm-data/europe/germany.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/germany/schleswig-holstein.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="schleswig-holstein-0.2.4.map" type="ram" map-start-position="54.314971,10.13190" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+   <pipeline name="thueringen.map" output-dir="europe/germany">
+	<read-pbf file="osm-data/europe/germany.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/germany/thueringen.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="thueringen-0.2.4.map" type="ram" map-start-position="50.972535,11.038556" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+
+
+<!--
+  <pipeline name="netherlands.pbf" output-dir="europe">
+  	<read-pbf file="osm-data/europe.osm.pbf">
+    <read-pbf file="osm-data/western-europe.osm.pbf">    	
+	  	<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/netherlands.poly" clipIncompleteEntities="true">
+  		  <mapfile-writer file="netherlands-0.2.4.map" type="ram" map-start-position="52.084167,4.3175" md5="true" />
+	    	</polygon-area-filter>
+    </read-pbf>
+  </pipeline>
+-->
+
+</configuration>

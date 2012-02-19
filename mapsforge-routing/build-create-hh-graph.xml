@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="mapsforge-routing-create-hh-graph">
+	<import file="build-global-properties.xml" />
+
+
+	<!-- JVM args -->
+	<property name="xmx" value="4000M" />
+
+	<condition property="osmosis" value="osmosis">
+		<os family="unix" />
+	</condition>
+	<condition property="osmosis" value="osmosis.bat">
+		<os family="windows" />
+	</condition>
+	<condition property="psql" value="psql">
+		<os family="unix" />
+	</condition>
+	<condition property="psql" value="psql.exe">
+		<os family="windows" />
+	</condition>	
+
+
+	<!-- directories -->
+	<property name="lib" value="lib/" />
+	<property name="data.osm" value="data/osm/" />
+	<property name="data.binary" value="data/binary/" />
+	<property name="data.temp" value="data/temp/" />
+
+	<!-- database fo highway hierarchies preprocessing -->
+	<property name="db.host" value="127.0.0.1" />
+	<property name="db.port" value="5432" />
+	<property name="db.name" value="osm" />
+	<property name="db.user" value="osm" />
+	<property name="db.pass" value="osm" />
+
+	<!-- load contrib tasks -->
+	<taskdef resource="net/sf/antcontrib/antcontrib.properties">
+		<classpath>
+			<pathelement location="lib/ant-contrib-1.0b3.jar" />
+		</classpath>
+	</taskdef>
+
+	<!-- download osm data -->
+	<target name="get-osm">
+		<mkdir dir="${data.osm}" />
+		<!--
+		<get dest="${data.osm}/baden-wuerttemberg.osm.pbf" src="http://download.geofabrik.de/osm/europe/germany/baden-wuerttemberg.osm.pbf" usetimestamp="true"/>
+		<get dest="${data.osm}/bayern.osm.pbf" src="http://download.geofabrik.de/osm/europe/germany/bayern.osm.pbf" usetimestamp="true"/>
+		<get dest="${data.osm}/brandenburg.osm.pbf" src="http://download.geofabrik.de/osm/europe/germany/brandenburg.osm.pbf" usetimestamp="true"/>
+		<get dest="${data.osm}/bremen.osm.pbf" src="http://download.geofabrik.de/osm/europe/germany/bremen.osm.pbf" usetimestamp="true"/>
+		<get dest="${data.osm}/germany.osm.pbf" src="http://download.geofabrik.de/osm/europe/germany.osm.pbf" usetimestamp="true"/>
+		-->
+		<get dest="${data.osm}/berlin.osm.pbf" src="http://download.geofabrik.de/osm/europe/germany/berlin.osm.pbf" usetimestamp="true" />
+
+	</target>
+
+	<!-- produce map and routing binaries -->
+	<target name="produce-binaries" depends="get-osm">
+		<mkdir dir="${data.binary}" />
+		<mkdir dir="${data.temp}" />
+		<foreach target="produce-binaries-loop" param="file">
+			<path>
+				<fileset dir="${data.osm}" casesensitive="yes">
+					<include name="*.pbf" />
+				</fileset>
+			</path>
+		</foreach>
+		<delete dir="${data.temp}" />
+	</target>
+
+	<target name="produce-binaries-loop" depends="get-osm">
+		<antcall target="extract-rg">
+			<param name="file" value="${file}" />
+		</antcall>
+		<antcall target="import-rg">
+			<param name="file" value="${file}" />
+		</antcall>
+		<antcall target="produce-onboard-routing-binary">
+			<param name="file" value="${file}" />
+		</antcall>
+		<antcall target="produce-offboard-routing-binary">
+			<param name="file" value="${file}" />
+		</antcall>
+		<antcall target="produce-map-binary">
+			<param name="file" value="${file}" />
+		</antcall>
+	</target>
+
+	<!-- extract routing graph -->
+	<target name="extract-rg">
+		<basename file="${file}" property="basename" suffix=".osm.pbf" />
+		<exec executable="${osmosis}">
+			<arg value="--rb" />
+			<arg value="${file}" />
+			<arg value="--rgw" />
+			<arg value="file=${data.temp}/${basename}.sql" />
+		</exec>
+	</target>
+
+	<!-- import routing graph to database -->
+	<target name="import-rg">
+		<basename file="${file}" property="basename" suffix=".osm.pbf" />
+		<exec executable="${psql}">
+			<env key="PGPASSWORD" value="${db.pass}" />
+			<arg value="-U" />
+			<arg value="${db.user}" />
+			<arg value="-d" />
+			<arg value="${db.name}" />
+			<arg value="-h" />
+			<arg value="${db.host}" />
+			<arg value="-p" />
+			<arg value="${db.port}" />
+			<arg value="-f" />
+			<arg value="${data.temp}/${basename}.sql" />
+		</exec>
+	</target>
+
+	<!-- produce onboard routing binary -->
+	<target name="produce-onboard-routing-binary">
+		<basename file="${file}" property="basename" suffix=".osm.pbf" />
+		<java jvmargs="Xmx${xmx}" classname="org.mapsforge.routing.preprocessing.hh.CommandLineUtil">
+			<arg value="${data.binary}/${basename}.mobileHH" />
+			<arg value="--format=mobile" />
+			<classpath>				
+				<pathelement location="${mapsforge.bin}" />
+				<fileset dir="lib">
+					<include name="**/*.jar" />
+				</fileset>
+			</classpath>
+		</java>
+	</target>
+
+	<!-- produce offboard routing binary -->
+	<target name="produce-offboard-routing-binary">
+		<basename file="${file}" property="basename" suffix=".osm.pbf" />
+		<java jvmargs="Xmx${xmx}" classname="org.mapsforge.routing.preprocessing.hh.CommandLineUtil">
+			<arg value="${data.binary}/${basename}.hh" />
+			<arg value="--format=server" />
+			<classpath>
+				<pathelement location="${mapsforge.bin}" />
+
+				<fileset dir="lib">
+					<include name="**/*.jar" />
+				</fileset>
+			</classpath>
+		</java>
+	</target>
+
+	<!-- produce map binary -->
+	<target name="produce-map-binary">
+		<basename file="${file}" property="basename" suffix=".osm.pbf" />
+		<exec executable="${osmosis}">
+			<arg value="--rb" />
+			<arg value="${file}" />
+			<arg value="--mw" />
+			<arg value="file=${data.binary}/${basename}.map" />
+		</exec>
+	</target>
+
+	<!-- delete all data files -->
+	<target name="clean">
+		<delete dir="${data.osm}" />
+		<delete dir="${data.binary}" />
+		<delete dir="${data.temp}" />
+	</target>
+
+</project>

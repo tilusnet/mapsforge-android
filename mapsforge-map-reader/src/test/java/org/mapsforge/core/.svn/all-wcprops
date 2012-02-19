@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/1755/trunk/mapsforge-map-reader/src/test/java/org/mapsforge/core
+END
+TestUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1750/trunk/mapsforge-map-reader/src/test/java/org/mapsforge/core/TestUtils.java
+END
+MapPositionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1755/trunk/mapsforge-map-reader/src/test/java/org/mapsforge/core/MapPositionTest.java
+END
+GeoPointTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1750/trunk/mapsforge-map-reader/src/test/java/org/mapsforge/core/GeoPointTest.java
+END
+LRUCacheTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1753/trunk/mapsforge-map-reader/src/test/java/org/mapsforge/core/LRUCacheTest.java
+END
+MercatorProjectionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1753/trunk/mapsforge-map-reader/src/test/java/org/mapsforge/core/MercatorProjectionTest.java
+END
+TagTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1753/trunk/mapsforge-map-reader/src/test/java/org/mapsforge/core/TagTest.java
+END
+TileTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1753/trunk/mapsforge-map-reader/src/test/java/org/mapsforge/core/TileTest.java
+END
+BoundingBoxTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1750/trunk/mapsforge-map-reader/src/test/java/org/mapsforge/core/BoundingBoxTest.java
+END

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="mapsforge-routing-global-properties">
+	<property name="mapsforge.version" value="0.2.4" />
+
+	<!-- JVM args -->
+	<property name="xmx" value="4000M" />
+
+	<property name="mapsforge.bin" value="bin" />
+	<property name="mapsforge.lib" value="lib" />
+	<property name="mapsforge.res" value="resources" />
+	<property name="mapsforge.src" value="src" />
+	<property name="mapsforge.dist" value="dist" />
+	<property name="mapsforge.doc" value="doc" />
+
+	<!-- Path to the properties file that includes the keystore parameters -->
+	<property file="../mapsforge-keystore.properties" />
+
+	<!-- List of files to be included in every distribution (JAR file) -->
+	<fileset dir="." id="info" includes="COPYING, COPYING.LESSER, NEWS" />
+
+
+	<property name="hh-writer-jar-path" value="${mapsforge.dist}/mapsforge-hh-graph-writer-${mapsforge.version}.jar" />
+	<property name="hh-onboard-jar-path" value="${mapsforge.dist}/mapsforge-hh-onboard-routing-${mapsforge.version}.jar" />
+	<property name="hh-offboard-jar-path" value="${mapsforge.dist}/mapsforge-hh-offboard-routing-${mapsforge.version}.jar" />
+	
+	<!-- List of all JAR files in the library folder -->
+	<path id="classpath">
+		<fileset dir="${mapsforge.lib}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<!-- Check if the keystore exists -->
+	<target name="check-for-keystore">
+		<available file="${mapsforge.keystore.location}" type="file" property="keystore.present" />
+	</target>
+
+	<!-- Refresh the given resource if Ant runs in the same JRE as the workspace -->
+	<target name="eclipse-refresh" if="eclipse.running">
+		<eclipse.refreshLocal resource="${resource}" depth="infinite" />
+	</target>
+</project>

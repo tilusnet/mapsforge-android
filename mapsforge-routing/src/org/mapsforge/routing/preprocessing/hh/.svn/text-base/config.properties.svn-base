@@ -1,0 +1,55 @@
+#############################
+# gerneral
+numThreads=2
+
+
+############################################
+# database to be used
+db.host=localhost
+db.port=5432
+db.user=mapsforge
+db.pass=mapsforge
+db.name=mapsforge_routing_hh
+
+#############################################
+#hierarchie parameters for serverside routing
+server.hierarchie.c=2.0
+server.hierarchie.h=90
+server.hierarchie.hopLimit=10
+server.hierarchie.downgradeEdges=true
+server.hierarchie.vertexThreshold=10000
+
+##########################################
+# hierarchie parameters for mobile routing
+mobile.hierarchie.c=1.5
+mobile.hierarchie.h=100
+mobile.hierarchie.hopLimit=15
+mobile.hierarchie.downgradeEdges=false
+mobile.hierarchie.vertexThreshold=0
+
+##################################################################
+#parameters for writing the mobile highway hierarchies binary file
+
+#switch : k_center | quad_tree
+clusteringAlgorithm=k_center
+
+#cluster sizes for quad_tree 		
+quad-tree.clusterSizeThreshold=150
+
+#cluster sizes for k_center 
+k-center.clusterSizeThreshold=75
+
+#over-sampling factor for k_center
+k-center.oversamplingFactor=8
+
+#group size for compression of address lookup table
+addressLookupTable.maxGroupSize=50
+
+#write hop indices to file(for shortcut expansion)
+includeHopIndices=true
+
+#size and alignment of r-tree nodes
+rtree.blockSize=4096
+
+
+

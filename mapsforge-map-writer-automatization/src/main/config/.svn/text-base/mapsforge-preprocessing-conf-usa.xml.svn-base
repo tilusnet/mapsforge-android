@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration 
+	osmosis-home="/export/local-1/public/mapsforge/preprocessing/bin/osmosis-0.39"
+	working-dir="/export/local-1/public/mapsforge/preprocessing"
+	logging-dir="log" 
+	output-dir="output"
+	destination-dir="/web/ftp.mapsforge.org/public"
+	move="false"  
+	xmlns="http://mapsforge.org/mapsforge-preprocessing-conf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://mapsforge.org/mapsforge-preprocessing-conf mapsforge-preprocessing-conf.xsd ">
+
+
+<!-- MAP FILES -->
+
+  <pipeline name="california.map" output-dir="north-america/us">
+	<read-pbf file="osm-data/planet.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/us-west/california.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="california-0.2.4.map" type="hd" map-start-position="38.575548,-121.468277" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="new-york.map" output-dir="north-america/us">
+	<read-pbf file="osm-data/planet.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/us-northeast/new-york.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="new-york-0.2.4.map" type="hd" map-start-position="40.715517,-74.007683" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+
+
+</configuration>

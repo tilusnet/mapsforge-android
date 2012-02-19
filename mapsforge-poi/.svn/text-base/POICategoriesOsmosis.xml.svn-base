@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- See: http://wiki.openstreetmap.org/w/index.php?title=Key:amenity&oldid=608028 -->
+<category title="root" xmlns="http://www.example.org/test"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/test test.xsd ">
+	<category title="Amenities">
+		<category title="Food">
+			<category title="Restaurants">
+				<mapping tag="amenity=restaurant" />
+			</category>
+			<category title="Food counter areas">
+				<mapping tag="amenity=food_court" />
+			</category>
+			<category title="Fast food restaurants">
+				<mapping tag="amenity=fast_food" />
+			</category>
+			<category title="Drinking water sources">
+				<mapping tag="amenity=drinking_water" />
+			</category>
+			<category title="Public grills">
+				<mapping tag="amenity=bbq" />
+			</category>
+			<category title="Pubs">
+				<mapping tag="amenity=pub" />
+			</category>
+			<category title="Bars">
+				<mapping tag="amenity=bar" />
+			</category>
+			<category title="Cafes">
+				<mapping tag="amenity=cafe" />
+			</category>
+			<category title="Beer gardens">
+				<mapping tag="amenity=beer_garden" />
+			</category>
+			<category title="Ice cream shops">
+				<mapping tag="amenity=ice_cream" />
+				<mapping tag="shop=ice_cream" />
+			</category>
+		</category>
+		<category title="Education institutes">
+			<category title="Kindergartens">
+				<mapping tag="amenity=kindergarten" />
+			</category>
+			<category title="School grounds">
+				<mapping tag="amenity=school" />
+			</category>
+			<category title="College campus or buildings">
+				<mapping tag="amenity=college" />
+			</category>
+			<category title="Public libraries">
+				<mapping tag="amenity=library" />
+			</category>
+			<category title="University campus or buildings">
+				<mapping tag="amenity=university" />
+			</category>
+		</category>
+		<category title="Transportation">
+			<category title="Ferry terminals">
+				<mapping tag="amenity=ferry_terminal" />
+			</category>
+			<category title="Bicyle parking places">
+				<mapping tag="amenity=bicycle_parking" />
+			</category>
+			<category title="Bicycle rental stations">
+				<mapping tag="amenity=bicycle_rental" />
+			</category>
+			<category title="Bus stations">
+				<mapping tag="amenity=bus_station" />
+			</category>
+			<category title="Car rental stations">
+				<mapping tag="amenity=car_rental" />
+			</category>
+			<category title="Car sharing stations">
+				<mapping tag="amenity=car_sharing" />
+			</category>
+			<category title="Car washing stations">
+				<mapping tag="amenity=car_wash" />
+			</category>
+			<category title="Fuel stations">
+				<mapping tag="amenity=fuel" />
+			</category>
+			<category title="Containers holding a mixture of salt and grit">
+				<mapping tag="amenity=grit_bin" />
+			</category>
+			<category title="Car parks">
+				<mapping tag="amenity=parking" />
+			</category>
+			<category title="A single parking space">
+				<mapping tag="amenity=parking_space" />
+			</category>
+			<category title="Entrances / Exits to underground parking facilities">
+				<mapping tag="amenity=parking_entrance" />
+			</category>
+			<category title="Taxi stands">
+				<mapping tag="amenity=taxi" />
+			</category>
+			<category title="Electric vehicle charging facilities">
+				<mapping tag="amenity=ev_charging" />
+			</category>
+		</category>
+		<category title="Financial institutes">
+			<category title="ATMs and cash points">
+				<mapping tag="amenity=atm" />
+			</category>
+			<category title="Banks">
+				<mapping tag="amenity=bank" />
+			</category>
+			<category title="Currency exchange places">
+				<mapping tag="amenity=bureau_de_change" />
+			</category>
+		</category>
+		<category title="Healthcare">
+			<category title="Pharmacies">
+				<mapping tag="amenity=pharmacy" />
+			</category>
+			<category title="Hospitals">
+				<mapping tag="amenity=hospital" />
+			</category>
+			<category title="Places to drop babies for remorse">
+				<mapping tag="amenity=baby_hatch" />
+			</category>
+			<category title="Dentists">
+				<mapping tag="amenity=dentist" />
+			</category>
+			<category title="Doctors's practises">
+				<mapping tag="amenity=doctors" />
+			</category>
+			<category title="Nursing homes">
+				<mapping tag="amenity=nursing_home" />
+			</category>
+			<category title="Social Facilities">
+				<mapping tag="amenity=social_facility" />
+			</category>
+			<category title="Veterinary clinics">
+				<mapping tag="amenity=veterinary" />
+			</category>
+		</category>
+		<category title="Entertainment, arts and culture">
+			<category title="Arts centers">
+				<mapping tag="amenity=arts_centre" />
+			</category>
+			<category title="Cinemas">
+				<mapping tag="amenity=cinema" />
+			</category>
+			<category title="Community centers">
+				<mapping tag="amenity=community_centre" />
+			</category>
+			<category title="Social centers">
+				<mapping tag="amenity=social_centre" />
+			</category>
+			<category title="Fountains">
+				<mapping tag="amenity=fountain" />
+			</category>
+			<category title="Nightclubs (Dancing)">
+				<mapping tag="amenity=nightclub" />
+			</category>
+			<category title="Strip clubs">
+				<mapping tag="amenity=stripclub" />
+			</category>
+			<category title="TV, radio or recording studios">
+				<mapping tag="amenity=studio" />
+			</category>
+			<category title="Theatres and operas">
+				<mapping tag="amenity=theatre" />
+			</category>
+		</category>
+		<category title="Other amenities">
+			<category title="Public benches">
+				<mapping tag="amenity=bench" />
+			</category>
+			<category title="Brothels">
+				<mapping tag="amenity=brothel" />
+			</category>
+			<category title="Public visible clocks">
+				<mapping tag="amenity=clock" />
+			</category>
+			<category title="Court houses">
+				<mapping tag="amenity=court_house" />
+			</category>
+			<category title="Crematoriums">
+				<mapping tag="amenity=crematorium" />
+			</category>
+			<category title="Embassies">
+				<mapping tag="amenity=embassy" />
+			</category>
+			<category title="Fire stations">
+				<mapping tag="amenity=fire_station" />
+			</category>
+			<category title="Grave yards">
+				<mapping tag="amenity=grave_yard" />
+			</category>
+			<category title="Hunting stands">
+				<mapping tag="amenity=hunting_stand" />
+			</category>
+			<category title="Marketplaces">
+				<mapping tag="amenity=market_place" />
+			</category>
+			<category title="Churches, mosques, temples">
+				<mapping tag="amenity=place_of_worship" />
+			</category>
+			<category title="Police stations">
+				<mapping tag="amenity=police" />
+			</category>
+			<category title="Post boxes">
+				<mapping tag="amenity=post_box" />
+			</category>
+			<category title="Post offices">
+				<mapping tag="amenity=post_office" />
+			</category>
+			<category title="Prisons (not including schools)">
+				<mapping tag="amenity=prison" />
+			</category>
+			<category title="Public buildings">
+				<mapping tag="amenity=public_building" />
+			</category>
+			<category title="Recycling facilities">
+				<mapping tag="amenity=recycling" />
+			</category>
+			<category title="Saunas">
+				<mapping tag="amenity=sauna" />
+			</category>
+			<category title="Bad weather shelters">
+				<mapping tag="amenity=shelter" />
+			</category>
+			<category title="Public telephones">
+				<mapping tag="amenity=telephone" />
+			</category>
+			<category title="Public toilets">
+				<mapping tag="amenity=toilets" />
+			</category>
+			<category title="Town hall buildings">
+				<mapping tag="amenity=townhall" />
+			</category>
+			<category title="Vending machines">
+				<mapping tag="amenity=vending_machine" />
+			</category>
+			<category title="Garbage cans">
+				<mapping tag="amenity=waste_basket" />
+			</category>
+			<category title="Garbage containers">
+				<mapping tag="amenity=waste_disposal" />
+			</category>
+			<category title="Water places for animals">
+				<mapping tag="amenity=watering_place" />
+			</category>
+		</category>
+	</category>
+</category>

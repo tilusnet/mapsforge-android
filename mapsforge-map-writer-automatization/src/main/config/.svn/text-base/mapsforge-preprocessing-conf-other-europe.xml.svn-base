@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration 
+	osmosis-home="/export/local-1/public/mapsforge/preprocessing/bin/osmosis-0.39"
+	working-dir="/export/local-1/public/mapsforge/preprocessing"
+	logging-dir="log" 
+	output-dir="output"
+	destination-dir="/web/ftp.mapsforge.org/public"
+	move="false"  
+	xmlns="http://mapsforge.org/mapsforge-preprocessing-conf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://mapsforge.org/mapsforge-preprocessing-conf mapsforge-preprocessing-conf.xsd ">
+
+
+<!-- MAP FILES -->
+
+  <pipeline name="poland.map" output-dir="europe">
+	<read-pbf file="osm-data/europe.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/poland.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="poland-0.2.4.map" type="hd" map-start-position="52.230073,21.011395" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="czech_republic.map" output-dir="europe">
+	<read-pbf file="osm-data/europe.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/czech_republic.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="czech_republic-0.2.4.map" type="hd" map-start-position="50.087699,14.419212" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="slovakia.map" output-dir="europe">
+	<read-pbf file="osm-data/europe.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/slovakia.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="slovakia-0.2.4.map" type="hd" map-start-position="48.14805,17.108459" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="hungary.map" output-dir="europe">
+	<read-pbf file="osm-data/europe.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/hungary.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="hungary-0.2.4.map" type="ram" map-start-position="47.498532,19.040766" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="croatia.map" output-dir="europe">
+	<read-pbf file="osm-data/europe.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/croatia.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="croatia-0.2.4.map" type="ram" map-start-position="45.814713,15.978413" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="serbia.map" output-dir="europe">
+	<read-pbf file="osm-data/europe.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/serbia.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="serbia-0.2.4.map" type="ram" map-start-position="44.802575,20.465684" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="slovenia.map" output-dir="europe">
+	<read-pbf file="osm-data/europe.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/slovenia.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="slovenia-0.2.4.map" type="ram" map-start-position="46.051493,14.505944" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="bosnia-herzegovina.map" output-dir="europe">
+	<read-pbf file="osm-data/europe.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/bosnia-herzegovina.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="bosnia-herzegovina-0.2.4.map" type="ram" map-start-position="43.847403,18.357124" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="montenegro.map" output-dir="europe">
+	<read-pbf file="osm-data/europe.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/montenegro.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="montenegro-0.2.4.map" type="ram" map-start-position="42.439516,19.266071" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="albania.map" output-dir="europe">
+	<read-pbf file="osm-data/europe.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/albania.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="albania-0.2.4.map" type="ram" map-start-position="41.326198,19.81601" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="kosovo.map" output-dir="europe">
+	<read-pbf file="osm-data/europe.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/kosovo.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="kosovo-0.2.4.map" type="ram" map-start-position="42.657965,21.153831" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="macedonia.map" output-dir="europe">
+	<read-pbf file="osm-data/europe.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/macedonia.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="macedonia-0.2.4.map" type="ram" map-start-position="41.991235,21.446857" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="greece.map" output-dir="europe">
+	<read-pbf file="osm-data/europe.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/greece.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="greece-0.2.4.map" type="ram" map-start-position="37.979166,23.716682" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="romania.map" output-dir="europe">
+	<read-pbf file="osm-data/europe.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/romania.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="romania-0.2.4.map" type="ram" map-start-position="44.437243,26.097679" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="bulgaria.map" output-dir="europe">
+	<read-pbf file="osm-data/europe.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/bulgaria.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="bulgaria-0.2.4.map" type="ram" map-start-position="42.697687,23.321764" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+<!--
+  <pipeline name="turkey.map" output-dir="europe">
+	<read-pbf file="osm-data/europe.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/turkey.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="turkey-0.2.4.map" type="ram" map-start-position="41.005358,28.978415" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+-->
+  <pipeline name="lithuania.map" output-dir="europe">
+	<read-pbf file="osm-data/europe.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/lithuania.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="lithuania-0.2.4.map" type="ram" map-start-position="54.690106,25.279799" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="latvia.map" output-dir="europe">
+	<read-pbf file="osm-data/europe.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/latvia.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="latvia-0.2.4.map" type="ram" map-start-position="56.946999,24.105227" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+  <pipeline name="estonia.map" output-dir="europe">
+	<read-pbf file="osm-data/europe.osm.pbf">
+		<polygon-area-filter polygon-file="conf/polygons/geofabrik/europe/estonia.poly" clipIncompleteEntities="true">
+			<mapfile-writer file="estonia-0.2.4.map" type="ram" map-start-position="59.437177,24.753227" md5="true"/>
+		</polygon-area-filter>
+	</read-pbf>
+  </pipeline>
+
+</configuration>

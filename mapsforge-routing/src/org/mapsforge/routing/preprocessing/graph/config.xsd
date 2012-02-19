@@ -1,0 +1,310 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:element name="config">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="routingTags" type="routingTagsType"
+					minOccurs="1" maxOccurs="1">
+					<xsd:annotation>
+						<xsd:documentation>
+							This routingTags element is for all the
+							additional tags you need
+							for your routing graph. e.g.
+							&lt;tag
+							k=name v=* /&gt; </xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="vehicles" type="vehiclesType"
+					minOccurs="1" maxOccurs="1"></xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:complexType name="vehiclesType">
+		<xsd:annotation>
+			<xsd:documentation></xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="vehicle" type="vehicleType" minOccurs="1"
+				maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Element for a new vehicle (you can build the
+						routing graph exactly for this vehicle)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="vehicleType">
+		<xsd:annotation>
+			<xsd:documentation>Defines a vehicle with name, maxspeed, the ways it
+				can drive, restrictions(traffic signs etc.) and factors which
+				influence the weight of the routing graph.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="name" type="xsd:string" minOccurs="1"
+				maxOccurs="1" />
+			<xsd:element name="maxspeed" type="xsd:int" minOccurs="1"
+				maxOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>Maxspeed in km/h</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<!-- all allowed ways (key - value) -->
+			<xsd:element name="usableWayTags" type="highwayTagsType"
+				minOccurs="1" maxOccurs="1" />
+			<!-- tags which influence the weight of an edge (key - value) -->
+			<xsd:element name="restrictions" type="restrictionsType"
+				minOccurs="1" maxOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>Restrictions can be tags in nodes or ways or
+						occure in form of relations.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="weightFactors" type="weightFactorsType"
+				minOccurs="1" maxOccurs="1">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="highwayTagsType">
+		<xsd:annotation>
+			<xsd:documentation>Put in all the allowed highway tags with an
+				addition speed specification for your vehicle.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="tag" type="highwayTagType" maxOccurs="unbounded"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="tagType">
+		<xsd:annotation>
+			<xsd:documentation>
+				The tagType has exactly the same form as a tag in OSM(
+				<!-- <tag k=* v=* /> -->
+				)
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="k" type="xsd:string" use="required"></xsd:attribute>
+		<xsd:attribute name="v" type="xsd:string"></xsd:attribute>
+	</xsd:complexType>
+
+
+
+	<xsd:complexType name="weightFactorsType">
+		<xsd:sequence minOccurs="1" maxOccurs="1">
+			<xsd:element name="stopNodeTags" type="stopTagsType"
+				minOccurs="1" maxOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>Usually node tags which represent a stop.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="speedreductions" type="speedreductionTagsType"
+				minOccurs="1" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="noOSMTags" type="tagsType" minOccurs="1"
+				maxOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>Other information to weight the routing graph.
+						The tags don't have to be the same tags as in OSM or don't have to
+						be out of the namespace of OSM!</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="stopTagsType">
+		<xsd:annotation>
+			<xsd:documentation>Put in tags which could stop the vehicle (e.g.
+				stop signs or traffic lights).
+				The tags need an additional time
+				attribute which define the estimated
+				stop time for forced stops (e.g.
+				stop sign) and the expected
+				standing time (time * probability to
+				stand) for conditional stops
+				like traffic lights.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="tag" type="tagTypeWithTime" minOccurs="0"
+				maxOccurs="unbounded"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="tagTypeWithTime">
+		<xsd:annotation>
+			<xsd:documentation>Simple tag with an additional time attribute in
+				seconds.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="tagType">
+				<xsd:attribute name="time" type="xsd:int" use="required"></xsd:attribute>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="speedreductionTagsType">
+		<xsd:annotation>
+			<xsd:documentation>Put in all the tags which could slow down your
+				vehicle either as the wayTags element(longer speed reduction) or as
+				a
+				nodeTags element (few and far between reductions).
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="wayTags" type="tagsWithPercType"
+				minOccurs="1" maxOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>
+						Put in the tags for a longer speed reductions,
+						e.g. surface types,
+						represented as a way. Needs
+						to have speed reduction mentioned as a
+						percentage value. (e.g. 30 is allowed, we'll go
+						down to 15 so the
+						percentage value should be 50)
+						E.g. Put in the the suface tag as:
+						<!-- <tag k="surface" v="gravel" perc="5" /> -->
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="nodeTags" type="tagsWithPercType"
+				minOccurs="1" maxOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>
+						Put in few and far between reduction tags like
+						traffic calming elements. Need to have speed
+						reduction mentioned as
+						a percentage value. (e.g.
+						30 is allowed, we'll go down to 15 so the
+						percentage value should be 50)
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="dynamicWayTags" type="tagsType"
+				minOccurs="1" maxOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>This element is for dynamic valued way tags(no fixed
+						value 'v', only key 'k') like maxspeed or incline.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:simpleType name="percType">
+		<xsd:restriction base="xsd:int">
+			<xsd:minInclusive value="0"></xsd:minInclusive>
+			<xsd:maxInclusive value="100"></xsd:maxInclusive>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:complexType name="tagTypeWithPerc">
+		<xsd:annotation>
+			<xsd:documentation>Simple tag with optional percentage attribute.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="tagType">
+				<xsd:attribute name="percent" type="percType" use="required">
+					<xsd:annotation>
+						<xsd:documentation>please put in all additional tags you need for
+							your routing algorithm</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="highwayTagType">
+		<xsd:annotation>
+			<xsd:documentation>Normal tag with an additional speed attribute.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="tagType">
+				<xsd:attribute name="speed" type="xsd:int" use="required"></xsd:attribute>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+
+
+
+
+	<xsd:complexType name="restrictionsType">
+		<xsd:annotation>
+			<xsd:documentation>Restrictiocs can be tags in nodes or ways but can
+				also be relations.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="wayTags" type="tagsType" minOccurs="1"
+				maxOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>Put in restriction tags (e.g. traffic signs)
+						where
+						the vehilce isn't suppose to drive/go.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="relations" type="relationType"
+				minOccurs="1" maxOccurs="1"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="relationType">
+		<xsd:annotation>
+			<xsd:documentation>Put in the tags and members of the relation which
+				should be considered.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence maxOccurs="unbounded" minOccurs="0">
+			<xsd:element name="tag" type="tagType" minOccurs="0"
+				maxOccurs="unbounded" />
+			<xsd:element name="member" type="memberType" minOccurs="0"
+				maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="memberType">
+		<xsd:attribute name="type" use="required">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="way" />
+					<xsd:enumeration value="node" />
+					<xsd:enumeration value="relation" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="ref" type="xsd:string" />
+		<xsd:attribute name="role" type="xsd:string" />
+	</xsd:complexType>
+
+
+	<xsd:complexType name="routingTagsType">
+		<xsd:sequence minOccurs="1" maxOccurs="1">
+			<xsd:element name="wayTags" type="tagsType" minOccurs="1"
+				maxOccurs="1"></xsd:element>
+			<xsd:element name="nodeTags" type="tagsType" minOccurs="1"
+				maxOccurs="1"></xsd:element>
+			<xsd:element name="relationTags" type="tagsType"
+				minOccurs="1" maxOccurs="1"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="tagsType">
+		<xsd:annotation>
+			<xsd:documentation>A simple list of tags.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="tag" type="tagType" minOccurs="0"
+				maxOccurs="unbounded"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="tagsWithPercType">
+		<xsd:sequence>
+			<xsd:element name="tag" type="tagTypeWithPerc" minOccurs="0"
+				maxOccurs="unbounded"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

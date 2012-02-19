@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1626/trunk/mapsforge-poi/src/org/mapsforge/storage/poi
+END
+PoiCategoryRangeQueryGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/1626/trunk/mapsforge-poi/src/org/mapsforge/storage/poi/PoiCategoryRangeQueryGenerator.java
+END
+PoiPersistenceManagerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/1626/trunk/mapsforge-poi/src/org/mapsforge/storage/poi/PoiPersistenceManagerFactory.java
+END
+PoiCategoryManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1626/trunk/mapsforge-poi/src/org/mapsforge/storage/poi/PoiCategoryManager.java
+END
+AndroidPoiCategoryManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1626/trunk/mapsforge-poi/src/org/mapsforge/storage/poi/AndroidPoiCategoryManager.java
+END
+UnknownPoiCategoryException.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/1626/trunk/mapsforge-poi/src/org/mapsforge/storage/poi/UnknownPoiCategoryException.java
+END
+PoiCategory.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/1626/trunk/mapsforge-poi/src/org/mapsforge/storage/poi/PoiCategory.java
+END
+PoiPersistenceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/1626/trunk/mapsforge-poi/src/org/mapsforge/storage/poi/PoiPersistenceManager.java
+END
+DoubleLinkedPoiCategory.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/1626/trunk/mapsforge-poi/src/org/mapsforge/storage/poi/DoubleLinkedPoiCategory.java
+END
+WhitelistPoiCategoryFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/1626/trunk/mapsforge-poi/src/org/mapsforge/storage/poi/WhitelistPoiCategoryFilter.java
+END
+SQLitePoiPersistenceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/1626/trunk/mapsforge-poi/src/org/mapsforge/storage/poi/SQLitePoiPersistenceManager.java
+END
+PoiImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/1626/trunk/mapsforge-poi/src/org/mapsforge/storage/poi/PoiImpl.java
+END
+PoiCategoryFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1626/trunk/mapsforge-poi/src/org/mapsforge/storage/poi/PoiCategoryFilter.java
+END
+PointOfInterest.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1626/trunk/mapsforge-poi/src/org/mapsforge/storage/poi/PointOfInterest.java
+END

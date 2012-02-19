@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>FU Navigation based on OpenStreetMap</title>
+    <link type="text/css" href="mapsforge.css" rel="stylesheet" />
+    <!--<script src="http://openlayers.org/api/OpenLayers.js"></script>-->
+    <!-- The following is a customized OpenLayers version created using the build tool.
+         It has also been optimized and minified using googles closure compiler. -->
+    <script src="js/MapsForge_OpenLayers.closure.min.js"></script>
+    <script src="js/mapsforge.js"></script>
+  </head>
+
+  <body>
+    <div id="map"></div>
+
+    <div id="leftDiv">
+      <div id="sizeSwitch">[+/-]</div>
+      <form name="search" id="searchForm">
+        <label for="start">Start:</label>
+        <input name="start" type="text" size="22" />
+
+        <label for="via">Halt:</label>
+        <input name="via" type="text" size="22" />
+
+        <label for="end">Ziel:</label>
+        <input name="end" type="text" size="22" />
+
+        <input id="routeButton" type="button" value="Route berechnen" class="mfbutton" />
+        <input id="newRequestButton" type="button" value="Neue Anfrage" class="mfbutton" />
+      </form>
+
+      <div id="turnByTurn"></div>
+    </div>
+  </body>
+</html>

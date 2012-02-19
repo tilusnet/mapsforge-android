@@ -1,0 +1,89 @@
+10
+
+dir
+1823
+http://mapsforge.googlecode.com/svn/trunk
+http://mapsforge.googlecode.com/svn
+
+
+
+2012-02-18T13:43:02.253221Z
+1823
+thilo.muehlberg@gmail.com
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+a424f762-2dd8-11df-bfeb-7b4c664f286a
+
+mapsforge-poi-writer
+dir
+
+Applications
+dir
+
+eclipse-config
+dir
+
+mapsforge-map-writer
+dir
+
+mapsforge-routing
+dir
+
+mapsforge-poi
+dir
+
+pom.xml
+file
+
+
+
+
+2012-02-19T02:53:00.000000Z
+b5d5f439e0a61b4c172dc228a089ed62
+2012-01-18T19:00:07.842755Z
+1750
+thilo.muehlberg@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3885
+
+mapsforge-map
+dir
+
+mapsforge-map-writer-automatization
+dir
+
+mapsforge-map-reader
+dir
+

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/model
+END
+IRgVertex.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/model/IRgVertex.java
+END
+IRgWeightFunction.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/model/IRgWeightFunction.java
+END
+RgWeightFunctionDistance.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/model/RgWeightFunctionDistance.java
+END
+RgWeightFunctionTime.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/model/RgWeightFunctionTime.java
+END
+IRgEdge.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/model/IRgEdge.java
+END
+RgVertex.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/model/RgVertex.java
+END
+TagHighway.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/model/TagHighway.java
+END
+RgEdge.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/hh/model/RgEdge.java
+END

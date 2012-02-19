@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1800/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/mapgenerator
+END
+JobQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1755/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/mapgenerator/JobQueue.java
+END
+MapGeneratorJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/1741/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/mapgenerator/MapGeneratorJob.java
+END
+TileCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/1722/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/mapgenerator/TileCache.java
+END
+InMemoryTileCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/1722/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/mapgenerator/InMemoryTileCache.java
+END
+MapGeneratorInternal.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/1741/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/mapgenerator/MapGeneratorInternal.java
+END
+MapGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/1755/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/mapgenerator/MapGenerator.java
+END
+FileSystemTileCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/1784/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/mapgenerator/FileSystemTileCache.java
+END
+MapWorker.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/1800/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/mapgenerator/MapWorker.java
+END
+TileScheduler.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/1755/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/mapgenerator/TileScheduler.java
+END
+MapGeneratorFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/1741/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/mapgenerator/MapGeneratorFactory.java
+END
+JobTheme.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1722/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/mapgenerator/JobTheme.java
+END
+JobParameters.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/1755/trunk/mapsforge-map/src/main/java/org/mapsforge/android/maps/mapgenerator/JobParameters.java
+END

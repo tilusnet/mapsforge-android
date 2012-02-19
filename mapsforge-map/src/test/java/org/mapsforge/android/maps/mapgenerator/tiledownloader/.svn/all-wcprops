@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/1722/trunk/mapsforge-map/src/test/java/org/mapsforge/android/maps/mapgenerator/tiledownloader
+END
+MapnikTileDownloaderTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/1722/trunk/mapsforge-map/src/test/java/org/mapsforge/android/maps/mapgenerator/tiledownloader/MapnikTileDownloaderTest.java
+END
+OsmarenderTileDownloaderTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/1722/trunk/mapsforge-map/src/test/java/org/mapsforge/android/maps/mapgenerator/tiledownloader/OsmarenderTileDownloaderTest.java
+END
+OpenCycleMapTileDownloaderTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/1722/trunk/mapsforge-map/src/test/java/org/mapsforge/android/maps/mapgenerator/tiledownloader/OpenCycleMapTileDownloaderTest.java
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/1808/trunk/mapsforge-poi-writer/src/main/java/org/mapsforge/storage/poi
+END
+PoiCategoryRangeQueryGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/1808/trunk/mapsforge-poi-writer/src/main/java/org/mapsforge/storage/poi/PoiCategoryRangeQueryGenerator.java
+END
+PoiCategoryManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/1808/trunk/mapsforge-poi-writer/src/main/java/org/mapsforge/storage/poi/PoiCategoryManager.java
+END
+UnknownPoiCategoryException.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/1808/trunk/mapsforge-poi-writer/src/main/java/org/mapsforge/storage/poi/UnknownPoiCategoryException.java
+END
+PoiCategory.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/1808/trunk/mapsforge-poi-writer/src/main/java/org/mapsforge/storage/poi/PoiCategory.java
+END
+PoiPersistenceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/1808/trunk/mapsforge-poi-writer/src/main/java/org/mapsforge/storage/poi/PoiPersistenceManager.java
+END
+DoubleLinkedPoiCategory.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/1808/trunk/mapsforge-poi-writer/src/main/java/org/mapsforge/storage/poi/DoubleLinkedPoiCategory.java
+END
+WhitelistPoiCategoryFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/1808/trunk/mapsforge-poi-writer/src/main/java/org/mapsforge/storage/poi/WhitelistPoiCategoryFilter.java
+END
+PoiImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/1808/trunk/mapsforge-poi-writer/src/main/java/org/mapsforge/storage/poi/PoiImpl.java
+END
+PoiCategoryFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/1808/trunk/mapsforge-poi-writer/src/main/java/org/mapsforge/storage/poi/PoiCategoryFilter.java
+END
+PointOfInterest.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1808/trunk/mapsforge-poi-writer/src/main/java/org/mapsforge/storage/poi/PointOfInterest.java
+END

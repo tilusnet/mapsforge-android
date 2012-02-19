@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1584/trunk/mapsforge-routing/lib
+END
+postgresql-9.1-901.jdbc4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1584/trunk/mapsforge-routing/lib/postgresql-9.1-901.jdbc4.jar
+END
+swingx-ws.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1584/trunk/mapsforge-routing/lib/swingx-ws.jar
+END
+hadoop-0.20.1-core.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1584/trunk/mapsforge-routing/lib/hadoop-0.20.1-core.jar
+END
+trove-3.0.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1584/trunk/mapsforge-routing/lib/trove-3.0.2.jar
+END
+javaproj-1.0.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1584/trunk/mapsforge-routing/lib/javaproj-1.0.8.jar
+END
+swingx.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1584/trunk/mapsforge-routing/lib/swingx.jar
+END
+protobuf-java-2.4.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1584/trunk/mapsforge-routing/lib/protobuf-java-2.4.1.jar
+END
+jts-1.12.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1584/trunk/mapsforge-routing/lib/jts-1.12.jar
+END
+osmosis-core-0.40.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1584/trunk/mapsforge-routing/lib/osmosis-core-0.40.jar
+END
+ant-contrib-1.0b3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1584/trunk/mapsforge-routing/lib/ant-contrib-1.0b3.jar
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/mm/osmosis
+END
+MultiRoutingGraphWriterTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/mm/osmosis/MultiRoutingGraphWriterTask.java
+END
+MultiRoutingGraphWriterPluginLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/mm/osmosis/MultiRoutingGraphWriterPluginLoader.java
+END
+TagMultiWay.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/mm/osmosis/TagMultiWay.java
+END
+MultiRoutingGraphWriterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/mm/osmosis/MultiRoutingGraphWriterFactory.java
+END
+plugin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/1584/trunk/mapsforge-routing/src/org/mapsforge/routing/preprocessing/mm/osmosis/plugin.xml
+END

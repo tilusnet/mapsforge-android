@@ -1,0 +1,43 @@
+# title; parent_title; k1.v1,k2.v2,k3.v3
+
+Root; ;
+
+Settlement; Root;
+Landmark; Root;
+
+city; Settlement; place.city
+town; Settlement; place.town
+village; Settlement; place.village
+
+gas station; Landmark; amenity.fuel
+train station; Landmark;railway.station
+tram station; Landmark;railway.tram_stop;;
+airport; Landmark; aerialway.station
+water tower; Landmark;man_made.water_tower
+tower; Landmark;man_made.tower
+wind mill; Landmark;man_made.windmill
+stadium; Landmark;leisure.stadium
+marina; Landmark;leisure.marina
+park; Landmark;leisure.park
+fast food restaurant; Landmark;amenity.fast_food
+car wash; Landmark;amenity.car_wash
+bank; Landmark;amenity.bank
+pharmacy; Landmark;amenity.pharmacy
+hospital; Landmark;amenity.hospital
+cinema; Landmark;amenity.cinema
+theatre; Landmark;amenity.theatre
+place of worship; Landmark;amenity.place_of_worship
+police station; Landmark;amenity.police
+post office; Landmark;amenity.post_office
+shopping mall;Landmark;shop.mall
+supermarket; Landmark;shop.supermarket
+video store; Landmark;shop.video
+hostel; Landmark;tourism.hostel
+hotel; Landmark;tourism.hotel
+motel; Landmark;tourism.motel
+attraction; Landmark;tourism.attraction
+zoo; Landmark;tourism.zoo
+castle; Landmark;historic.castle
+monument; Landmark;historic.monument
+memorial; Landmark;historic.memorial
+pedestrian crossing; Landmark;highway.crossing

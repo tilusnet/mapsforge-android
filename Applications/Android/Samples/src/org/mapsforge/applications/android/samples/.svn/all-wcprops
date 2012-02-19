@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/1798/trunk/Applications/Android/Samples/src/org/mapsforge/applications/android/samples
+END
+OverlayMapViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/1728/trunk/Applications/Android/Samples/src/org/mapsforge/applications/android/samples/OverlayMapViewer.java
+END
+BasicMapViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/1728/trunk/Applications/Android/Samples/src/org/mapsforge/applications/android/samples/BasicMapViewer.java
+END
+Samples.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/1728/trunk/Applications/Android/Samples/src/org/mapsforge/applications/android/samples/Samples.java
+END
+DualMapViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/1798/trunk/Applications/Android/Samples/src/org/mapsforge/applications/android/samples/DualMapViewer.java
+END
+DownloadMapViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/1741/trunk/Applications/Android/Samples/src/org/mapsforge/applications/android/samples/DownloadMapViewer.java
+END
